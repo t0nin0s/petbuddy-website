@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './styles/App.scss';
-import 'normalize.css';
-import Button from './components/Button'
+//import 'normalize.css';
+import Button from '../Button/Button'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,3 +18,5 @@ function App() {
 }
 
 export default App;
+
+

@@ -18,6 +18,7 @@ const StyledButton = styled(Button)`
 `;
 
 export default (props: any) => {
+  console.log(props)
   return (
     <StyledButton variant="contained">
       {props.children}
