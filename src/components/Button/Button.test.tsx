@@ -3,7 +3,7 @@ import Button from './Button'
 import { StyledButton } from 'styled-components'
 import { render } from '@testing-library/react'
 
-describe.only('Button component', () => {
+describe('Button component', () => {
   it('should render the button', () => {
     const wrapper = render(<Button />)
     expect(wrapper).toMatchSnapshot();

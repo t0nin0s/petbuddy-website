@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 //import 'normalize.css';
-import Button from '../Button/Button'
+import Button from './components/Button/Button'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <div> count is {count} </div>
       <Button>button</Button>
+      <Footer>Designed & managed by Pet Buddy@2020</Footer>
     </div>
   );
 }

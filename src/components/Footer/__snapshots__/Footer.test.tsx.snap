@@ -1,59 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component should render App 1`] = `
+exports[`Footer component should render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="App"
-      >
-        <div>
-           count is 
-          0
-           
-        </div>
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-bdfBwQ jdtooK"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            button
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
+      <footer
+        class="sc-bdfBwQ fekGey"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="App"
-    >
-      <div>
-         count is 
-        0
-         
-      </div>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-bdfBwQ jdtooK"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
-        >
-          button
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
-    </div>
+    <footer
+      class="sc-bdfBwQ fekGey"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
