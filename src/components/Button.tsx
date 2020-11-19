@@ -1,17 +1,27 @@
 import React from 'react'
-import './Button.scss'
+import Button from '@material-ui/core/Button';
+import styled from 'styled-components'
 
-interface Button {
-  clickHandler: (e: any) => void;
+const StyledButton = styled(Button)`
+&& {
+  letter-spacing: .3em;
+  text-transform: capitalize;
+  background-color: #efb7c0;
+  font-weight: bold;
+  padding:1rem 2rem;
+  font-size: 14px;
+  color:white;
+  :hover {
+    background-color: #f48fb1;
+  }
 }
+`;
 
-export const Button:React.FC<Button> = (props) => {
+export default (props: any) => {
   return (
-    <button
-      className='button'
-      onClick={props.clickHandler}
-    >
+    <StyledButton variant="contained">
       {props.children}
-    </button>
+    </StyledButton>
   )
 }
+
