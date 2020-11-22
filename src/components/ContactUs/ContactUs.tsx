@@ -10,6 +10,7 @@ display: flex;
 flex-flow: column nowrap;
 padding: 3rem .5rem;
 align-items: center;
+justify-content: center;
 width: 75%;
 margin: 0 auto;
 border-radius: 10px;
@@ -43,12 +44,16 @@ margin:1rem 0;
 `
 const EmailUs = styled.div`
  margin:1rem 0;
+ font-size: 20px;
+ font-weight: 700;
  ${mediaQueries("md")`
   flex-flow:column;
   `}
 `
 const CallUs = styled.div`
  margin:1rem 0;
+ font-size: 20px;
+ font-weight: 700;
 `
 const FollowUs = styled.div`
 display:flex;
