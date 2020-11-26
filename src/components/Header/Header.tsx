@@ -1,5 +1,5 @@
 import React from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import styled from 'styled-components'
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -9,35 +9,37 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 
 const linksArray: Array<string> = ['Home', 'Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1
-    },
-    container: {
-      backgroundColor: 'whitesmoke',
-      color: 'purple'
 
-    },
-    menu: {
-      right: '-5%',
-      "&:hover": {
-        color: 'purple',
-        fontWeight: 'bold'
-      }
-    },
-    menuButton: {
-      marginRight: theme.spacing(2)
-    },
-    title: {
-      flexGrow: 1
-    }
-  })
-);
+const StyledAppBar = styled(AppBar)`
+`
+const StyledToolbar = styled(Toolbar)`
+background-color: whitesmoke;
+color: purple;
+justify-content:space-between
+`
+const StyledTypography = styled(Typography)`
+&& {
+  font-size:2rem;
+  font-weight:700
+}
+`
+const StyledIconButton = styled(IconButton)`
+ `
+const StyledMenuIcon = styled(MenuIcon)`
+  && {
+  font-size:3rem;
+  font-weight:700;
+  color: purple;
+  }
+`
+const StyledMenu = styled(Menu)`
+margin-left: 50%;
+margin-top: 17%;
+width:150%;
+
+`
 
 export default function MenuAppBar() {
-  const classes = useStyles();
-
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -48,45 +50,31 @@ export default function MenuAppBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   const ourServices = linksArray.map(service => {
-    return <MenuItem className={classes.menu} onClick={handleClose}>{service}</MenuItem>
+    return <MenuItem onClick={handleClose}>{service}</MenuItem>
   })
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" className={classes.container}>
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+    <div className="header-container">
+      <StyledAppBar position="static">
+        <StyledToolbar>
+          <StyledTypography >
             PetBuddy
-          </Typography>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
+          </StyledTypography>
+          <StyledIconButton
             onClick={handleMenu}
           >
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorEl}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "right"
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "right"
-            }}
+            <StyledMenuIcon />
+          </StyledIconButton>
+          <StyledMenu
             open={open}
             onClose={handleClose}
           >
             {ourServices}
-          </Menu>
-        </Toolbar>
-      </AppBar>
+          </StyledMenu>
+        </StyledToolbar>
+      </StyledAppBar>
     </div>
   );
 }
