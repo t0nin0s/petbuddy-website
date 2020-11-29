@@ -10,8 +10,8 @@ import Menu from "@material-ui/core/Menu";
 
 const linksArray: Array<string> = ['Home', 'Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
 
-const StyledAppBar = styled(AppBar)`
-`
+const StyledAppBar = styled(AppBar)``
+
 const StyledToolbar = styled(Toolbar)`
 background-color: whitesmoke;
 color: purple;
@@ -23,8 +23,8 @@ const StyledTypography = styled(Typography)`
   font-weight:700
 }
 `
-const StyledIconButton = styled(IconButton)`
- `
+const StyledIconButton = styled(IconButton)``
+
 const StyledMenuIcon = styled(MenuIcon)`
   && {
   font-size:3rem;
@@ -33,10 +33,10 @@ const StyledMenuIcon = styled(MenuIcon)`
   }
 `
 const StyledMenu = styled(Menu)`
-margin-left: 50%;
-margin-top: 17%;
-width:150%;
-
+&& {
+  margin-left: 3.5%;
+  }
+}
 `
 
 export default function MenuAppBar() {
@@ -68,6 +68,10 @@ export default function MenuAppBar() {
             <StyledMenuIcon />
           </StyledIconButton>
           <StyledMenu
+            anchorEl={anchorEl}
+            getContentAnchorEl={null}
+            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            transformOrigin={{ vertical: "top", horizontal: "center" }}
             open={open}
             onClose={handleClose}
           >
