@@ -6,169 +6,30 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root MuiCard-root sc-dlfnbm gBfBfx MuiPaper-elevation1 MuiPaper-rounded"
+        class="sc-bdfBwQ efIwes review-container"
       >
-        <div
-          class="MuiCardContent-root sc-hKgILt"
-        >
-          <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column"
+        <div>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root sc-dlfnbm fnQiNF"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            <div
-              class="sc-eCssSg kVmVbl"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root sc-bdfBwQ iuGsUR"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              />
-              <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
-              >
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                />
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10"
-                >
-                  <p
-                    class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                  >
-                    “PetBuddy are always available, even at short notice and Christmas. They take really great care of Lulu, giving lots of love and attention. Really pleased to have PetBuddy around”
-                  </p>
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                  />
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
-                >
-                  <p
-                    class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                  >
-                    - Maila, London
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            <path
+              d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
+            />
+          </svg>
+        </div>
+        <div>
           <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column"
+            class="sc-gsTCUz bxoXwu"
           >
-            <div
-              class="sc-eCssSg kVmVbl"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root sc-bdfBwQ iuGsUR"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              />
-              <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
-              >
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                />
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10"
-                >
-                  <p
-                    class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                  >
-                    “We always return from holiday to find Boss as happy as when we look after him ourselves, PetBuddy only have the best sitters and we trust them 100%”
-                  </p>
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                  />
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
-                >
-                  <p
-                    class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                  >
-                    - Margarita, London
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column"
-          >
-            <div
-              class="sc-eCssSg kVmVbl"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root sc-bdfBwQ iuGsUR"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              />
-              <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
-              >
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                />
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10"
-                >
-                  <p
-                    class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                  >
-                    “George loves his walks with PetBuddy, they really treat him like he is their own, he comes back happy and having had the best playtime”
-                  </p>
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                  />
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
-                >
-                  <p
-                    class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                  >
-                    - Annabelle, Nottingham
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p
+              class="sc-hKgILt fCvRdt"
+            />
+            <p
+              class="sc-hKgILt fCvRdt"
+            />
           </div>
         </div>
       </div>
@@ -176,169 +37,30 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiPaper-root MuiCard-root sc-dlfnbm gBfBfx MuiPaper-elevation1 MuiPaper-rounded"
+      class="sc-bdfBwQ efIwes review-container"
     >
-      <div
-        class="MuiCardContent-root sc-hKgILt"
-      >
-        <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column"
+      <div>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root sc-dlfnbm fnQiNF"
+          focusable="false"
+          viewBox="0 0 24 24"
         >
-          <div
-            class="sc-eCssSg kVmVbl"
-          >
-            <div
-              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root sc-bdfBwQ iuGsUR"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
-                />
-              </svg>
-            </div>
-            <div
-              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-            />
-            <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              />
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10"
-              >
-                <p
-                  class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                >
-                  “PetBuddy are always available, even at short notice and Christmas. They take really great care of Lulu, giving lots of love and attention. Really pleased to have PetBuddy around”
-                </p>
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                />
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
-              >
-                <p
-                  class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                >
-                  - Maila, London
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          <path
+            d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
+          />
+        </svg>
+      </div>
+      <div>
         <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column"
+          class="sc-gsTCUz bxoXwu"
         >
-          <div
-            class="sc-eCssSg kVmVbl"
-          >
-            <div
-              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root sc-bdfBwQ iuGsUR"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
-                />
-              </svg>
-            </div>
-            <div
-              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-            />
-            <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              />
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10"
-              >
-                <p
-                  class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                >
-                  “We always return from holiday to find Boss as happy as when we look after him ourselves, PetBuddy only have the best sitters and we trust them 100%”
-                </p>
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                />
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
-              >
-                <p
-                  class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                >
-                  - Margarita, London
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column"
-        >
-          <div
-            class="sc-eCssSg kVmVbl"
-          >
-            <div
-              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root sc-bdfBwQ iuGsUR"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
-                />
-              </svg>
-            </div>
-            <div
-              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-            />
-            <div
-              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-              />
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10"
-              >
-                <p
-                  class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                >
-                  “George loves his walks with PetBuddy, they really treat him like he is their own, he comes back happy and having had the best playtime”
-                </p>
-                <div
-                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
-                />
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
-              >
-                <p
-                  class="MuiTypography-root sc-gsTCUz iRkChN MuiTypography-body1"
-                >
-                  - Annabelle, Nottingham
-                </p>
-              </div>
-            </div>
-          </div>
+          <p
+            class="sc-hKgILt fCvRdt"
+          />
+          <p
+            class="sc-hKgILt fCvRdt"
+          />
         </div>
       </div>
     </div>

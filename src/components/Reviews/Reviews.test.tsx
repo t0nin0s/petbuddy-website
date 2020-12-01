@@ -1,5 +1,5 @@
 import React from 'react'
-import Reviews from './Reviews'
+import Reviews from './index'
 import { render } from '@testing-library/react'
 
 describe('Reviews component', () => {
