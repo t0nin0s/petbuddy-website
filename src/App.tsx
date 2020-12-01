@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
 import { Grid } from '@material-ui/core';
-import Header from './components/Header/Header'
-import Button from './components/Button/Button'
-import Review from './components/Reviews'
-import ContactUsContainer from './components/ContactUs/ContactUs';
+import Header from './components/Header'
+import Button from './components/Button'
+import Review from './components/Review'
+import ContactUsContainer from './components/ContactUs';
 import { mediaQueries } from './mediaqueries'
 
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer'
 
 interface Review {
   id: number;
