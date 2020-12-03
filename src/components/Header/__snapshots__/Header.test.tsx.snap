@@ -9,18 +9,77 @@ Object {
         class="header-container"
       >
         <header
-          class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary sc-bdfBwQ MuiPaper-elevation4"
+          class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary sc-bdfBwQ mui-fixed MuiPaper-elevation4"
         >
           <div
-            class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz hgMaly MuiToolbar-gutters"
+            class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz fWJebG MuiToolbar-gutters"
           >
             <p
-              class="MuiTypography-root sc-dlfnbm kErYsu MuiTypography-body1"
+              class="MuiTypography-root sc-dlfnbm dbIros MuiTypography-body1"
             >
               PetBuddy
             </p>
+            <div
+              class="sc-gKsewC eCvdcS"
+            >
+              <li
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Cat Services
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </li>
+              <li
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Dog Services
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </li>
+              <li
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Small Pet Services
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </li>
+              <li
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Become a PBuddy
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </li>
+              <li
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Contact Us
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </li>
+            </div>
             <button
-              class="MuiButtonBase-root MuiIconButton-root sc-hKgILt"
+              class="MuiButtonBase-root MuiIconButton-root sc-hKgILt dhwanL"
               tabindex="0"
               type="button"
             >
@@ -29,7 +88,7 @@ Object {
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root sc-eCssSg loZVTp"
+                  class="MuiSvgIcon-root sc-eCssSg kUykmG"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -52,18 +111,77 @@ Object {
       class="header-container"
     >
       <header
-        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary sc-bdfBwQ MuiPaper-elevation4"
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary sc-bdfBwQ mui-fixed MuiPaper-elevation4"
       >
         <div
-          class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz hgMaly MuiToolbar-gutters"
+          class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz fWJebG MuiToolbar-gutters"
         >
           <p
-            class="MuiTypography-root sc-dlfnbm kErYsu MuiTypography-body1"
+            class="MuiTypography-root sc-dlfnbm dbIros MuiTypography-body1"
           >
             PetBuddy
           </p>
+          <div
+            class="sc-gKsewC eCvdcS"
+          >
+            <li
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Cat Services
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </li>
+            <li
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Dog Services
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </li>
+            <li
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Small Pet Services
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </li>
+            <li
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Become a PBuddy
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </li>
+            <li
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Contact Us
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </li>
+          </div>
           <button
-            class="MuiButtonBase-root MuiIconButton-root sc-hKgILt"
+            class="MuiButtonBase-root MuiIconButton-root sc-hKgILt dhwanL"
             tabindex="0"
             type="button"
           >
@@ -72,7 +190,7 @@ Object {
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root sc-eCssSg loZVTp"
+                class="MuiSvgIcon-root sc-eCssSg kUykmG"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
