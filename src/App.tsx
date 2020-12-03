@@ -35,7 +35,7 @@ const reviews: Review[] = [
 const ColumnToRowWrapper = styled.div`
 display: flex;
 flex-direction: column;
-${mediaQueries("lg")`
+${mediaQueries("tablet")`
   flex-direction: row;
 `}`
 
@@ -49,8 +49,8 @@ function App() {
     <div className="App" >
       <Grid container direction="column">
         <Grid item container>
-          <Grid item xs={false} sm={false} md={2} lg={2} xl={2} />
-          <Grid item xs={12} sm={12} md={8} lg={8} xl={8} >
+          <Grid item xs={false} sm={false} md={false} lg={1} xl={1} />
+          <Grid item xs={12} sm={12} md={12} lg={10} xl={10} >
             <Header />
             <ColumnToRowWrapper >
               {reviews.map(review => {
@@ -64,7 +64,6 @@ function App() {
               contact="Contact Us"
               call="Call Us" />
           </Grid>
-          <Grid item xs={false} sm={false} md={2} lg={2} xl={2} />
         </Grid>
         <div> count is {count} </div>
         <Button>button</Button>
