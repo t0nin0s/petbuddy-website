@@ -21,25 +21,26 @@ const StyledToolbar = styled(Toolbar)`
 const StyledTypography = styled(Typography)`
   font-size:2rem;
   font-weight:700
-  `
+`
 const StyledIconButton = styled(IconButton)`
 ${mediaQueries("medium")`
-  display:none;`}`
+  display:none`}
+`
 
 const StyledMenuIcon = styled(MenuIcon)`
-  font-size:3rem;
-  font-weight:700;
-  color: purple;
-  display:flex;
+font-size: 3rem;
+font-weight: 700;
+color: purple;
+display: flex;
 ${mediaQueries("medium")`
   display:none;`}
 `
 const StyledMenu = styled(Menu)`
-  margin-left: 3.5%;
+margin-left: 3.5 %;
 `
 const NavBarItems = styled.div`
-display:none;
-  ${mediaQueries("medium")`
+display: none;
+${mediaQueries("medium")`
     display:flex;
     flex-direction:row;
     flex-grow:1;
