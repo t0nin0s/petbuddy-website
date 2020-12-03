@@ -8,7 +8,7 @@ background-color: #383e59;
 color:white;
 display:flex;
 flex-flow: row;
-${mediaQueries("lg")`
+${mediaQueries("tablet")`
   margin:0;
   padding:0;
   width:33.3%;

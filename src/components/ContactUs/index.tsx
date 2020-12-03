@@ -17,7 +17,7 @@ border-radius: 10px;
 margin-bottom: 5rem;
 background-color: #F5F5F5;
 font-weight:700;
-${mediaQueries("sm")`
+${mediaQueries("mobile")`
   flex-flow:row wrap;
   `}
 `
@@ -29,7 +29,7 @@ width: 80%;
 margin:1rem 0;
 color:#4B0082;
 font-weight:400;
-${mediaQueries("sm")`
+${mediaQueries("mobile")`
   width: 45%;
   justify-content: center;
   `}
@@ -46,7 +46,7 @@ const EmailUs = styled.div`
  margin:1rem 0;
  font-size: 20px;
  font-weight: 700;
- ${mediaQueries("md")`
+ ${mediaQueries("tablet")`
   flex-flow:column;
   `}
 `
@@ -61,7 +61,7 @@ align-self:normal;
 justify-content: space-around;
 margin-top: 2rem 0;
 align-item:center;
-${mediaQueries("sm")`
+${mediaQueries("mobile")`
   justify-content: space-around;
   width: 90%;
   margin:1rem 0;
