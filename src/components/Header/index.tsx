@@ -68,7 +68,7 @@ export default function MenuAppBar() {
 
   return (
     <div className="header-container">
-      <StyledAppBar position="static">
+      <StyledAppBar position="fixed">
         <StyledToolbar>
           <StyledTypography >
             PetBuddy

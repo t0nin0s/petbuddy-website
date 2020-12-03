@@ -35,6 +35,7 @@ const reviews: Review[] = [
 const ColumnToRowWrapper = styled.div`
 display: flex;
 flex-direction: column;
+padding-top: 4rem;
 ${mediaQueries("tablet")`
   flex-direction: row;
 `}`
