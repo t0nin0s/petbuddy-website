@@ -17,9 +17,6 @@ border-radius: 10px;
 margin-bottom: 5rem;
 background-color: #F5F5F5;
 font-weight:700;
-${mediaQueries("mobile")`
-  flex-flow:row wrap;
-  `}
 `
 const ContactUs = styled.div`
 display:flex;
@@ -29,10 +26,6 @@ width: 80%;
 margin:1rem 0;
 color:#4B0082;
 font-weight:400;
-${mediaQueries("mobile")`
-  width: 45%;
-  justify-content: center;
-  `}
 `
 const ContactIcon = styled(FontAwesomeIcon)`
 border: 2px solid #f48fb1;
@@ -61,11 +54,6 @@ align-self:normal;
 justify-content: space-around;
 margin-top: 2rem 0;
 align-item:center;
-${mediaQueries("mobile")`
-  justify-content: space-around;
-  width: 90%;
-  margin:1rem 0;
-  `}
 `
 
 export default (props: any) => {
