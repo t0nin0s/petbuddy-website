@@ -1,7 +1,8 @@
 export const breakpoints = {
-  sm: 768,
-  md: 1024,
-  lg: 1201
+  tablet: 768,
+  medium: 980,
+  laptop: 1024,
+  xl: 1201
 }
 
 export const mediaQueries = (key: keyof typeof breakpoints) => {

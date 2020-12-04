@@ -7,36 +7,47 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
+import { mediaQueries } from '../../mediaqueries'
 
-const linksArray: Array<string> = ['Home', 'Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
+const linksArray: Array<string> = ['Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
 
 const StyledAppBar = styled(AppBar)``
 
 const StyledToolbar = styled(Toolbar)`
-background-color: whitesmoke;
-color: purple;
-justify-content:space-between
+  background-color: whitesmoke;
+  color: purple;
+  justify-content:space-between
 `
 const StyledTypography = styled(Typography)`
-&& {
   font-size:2rem;
   font-weight:700
-}
 `
-const StyledIconButton = styled(IconButton)``
+const StyledIconButton = styled(IconButton)`
+${mediaQueries("medium")`
+  display:none`}
+`
 
 const StyledMenuIcon = styled(MenuIcon)`
-  && {
-  font-size:3rem;
-  font-weight:700;
-  color: purple;
-  }
+font-size: 3rem;
+font-weight: 700;
+color: purple;
+display: flex;
+${mediaQueries("medium")`
+  display:none;`}
 `
 const StyledMenu = styled(Menu)`
-&& {
-  margin-left: 3.5%;
-  }
-}
+margin-left: 3.5 %;
+`
+const NavBarItems = styled.div`
+display: none;
+${mediaQueries("medium")`
+    display:flex;
+    flex-direction:row;
+    flex-grow:1;
+    justify-content: flex-end;
+    color:#f48fb1;
+    font-weight: 900;
+    `}
 `
 
 export default function MenuAppBar() {
@@ -57,14 +68,14 @@ export default function MenuAppBar() {
 
   return (
     <div className="header-container">
-      <StyledAppBar position="static">
+      <StyledAppBar position="fixed">
         <StyledToolbar>
           <StyledTypography >
             PetBuddy
           </StyledTypography>
+          <NavBarItems>{ourServices}</NavBarItems>
           <StyledIconButton
-            onClick={handleMenu}
-          >
+            onClick={handleMenu}>
             <StyledMenuIcon />
           </StyledIconButton>
           <StyledMenu
