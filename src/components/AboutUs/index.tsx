@@ -28,6 +28,7 @@ ${mediaQueries("tablet")`
 font-size: 2rem`} 
 `
 const AboutSubHeader = styled.h1`
+text-align: center;
 color:#a28bbb;
 ${mediaQueries("tablet")`
 font-size: 3rem`} 
