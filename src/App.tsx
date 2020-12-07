@@ -6,32 +6,10 @@ import Button from './components/Button'
 import Review from './components/Review'
 import ContactUsContainer from './components/ContactUs';
 import { mediaQueries } from './mediaqueries'
-
 import Footer from './components/Footer'
+import { ReviewArray } from './types'
+import reviews from './lib/data'
 
-interface Review {
-  id: number;
-  comment: string;
-  user: string;
-}
-
-const reviews: Review[] = [
-  {
-    id: 1,
-    comment: '“PetBuddy are always available, even at short notice and Christmas. They take really great care of Lulu, giving lots of love and attention. Really pleased to have PetBuddy around”',
-    user: '- Maila, London'
-  },
-  {
-    id: 2,
-    comment: '“We always return from holiday to find Boss as happy as when we look after him ourselves, PetBuddy only have the best sitters and we trust them 100%”',
-    user: '- Margarita, London'
-  },
-  {
-    id: 3,
-    comment: '“George loves his walks with PetBuddy, they really treat him like he is their own, he comes back happy and having had the best playtime”',
-    user: '- Annabelle, Nottingham'
-  }
-]
 const ColumnToRowWrapper = styled.div`
 display: flex;
 flex-direction: column;
