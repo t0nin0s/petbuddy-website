@@ -5,7 +5,7 @@ import { mediaQueries } from '../../mediaqueries';
 import Boss from '../../images/Boss.jpg'
 import Logo from '../../images/logo.jpg'
 
-const AboutContainer = styled.div`
+const Container = styled.div`
 display: flex;
 flex-direction: column;
 padding:2rem;
@@ -13,30 +13,31 @@ letter-spacing: 2px;
 line-height: 1.8em;
 align-items: center;
 `
-const AboutLogoImage = styled.img`
+const LogoImage = styled.img`
 width: 25%;
 padding: 2rem;
 border-radius:60%;
 `
-const AboutContent = styled.div`
+const Content = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;`
-const AboutHeader = styled.h3`
+align-items: center;
+`
+const Header = styled.h3`
 color:#efb7c0!important;
 ${mediaQueries("tablet")`
 font-size: 2rem`} 
 `
-const AboutSubHeader = styled.h1`
+const SubHeader = styled.h1`
 text-align: center;
 color:#a28bbb;
 ${mediaQueries("tablet")`
 font-size: 3rem`} 
 `
-const AboutServices = styled.p`
+const Services = styled.p`
 color: #666;
 `
-const AboutBGroundImage = styled.img`
+const BGroundImage = styled.img`
 width:121%;
 margin-top: 4rem;
 ${mediaQueries("xl")`
@@ -44,19 +45,18 @@ width:100%`}
 `
 
 export default (props: any) => {
-  console.log(props)
-  const { header, subHeader, aboutPgraph1, aboutPgraph2, aboutPgraph3 } = props;
+  const { header, subheader, text } = props
   return (
-    <AboutContainer >
-      <AboutLogoImage src={Logo} alt="logo" />
-      <AboutContent>
-        <AboutHeader>{header} </AboutHeader>
-        <AboutSubHeader>{subHeader}</AboutSubHeader>
-        <AboutServices>{aboutPgraph1}</AboutServices>
-        <AboutServices>{aboutPgraph2}</AboutServices>
-        <AboutServices>{aboutPgraph3}</AboutServices>
-      </AboutContent>
-      <AboutBGroundImage src={Boss} alt="cat" />
-    </AboutContainer>
+    <Container >
+      <LogoImage src={Logo} alt="logo" />
+      <Content >
+        <Header> {header}</Header>
+        <SubHeader>{subheader}</SubHeader>
+        {text.slice(1).map((item: any) => {
+          return <Services key={item.id}>{item.paragraph}</Services>
+        })}
+      </Content>
+      <BGroundImage src={Boss} alt="cat" />
+    </Container>
   );
 }
