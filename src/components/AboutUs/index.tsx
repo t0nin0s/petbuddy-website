@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import Button from '../Button'
 import { mediaQueries } from '../../mediaqueries';
-import Boss from '../../images/Boss.jpg'
-import Logo from '../../images/logo.jpg'
+
 
 const Container = styled.div`
 display: flex;
@@ -34,7 +33,7 @@ color:#a28bbb;
 ${mediaQueries("tablet")`
 font-size: 3rem`} 
 `
-const Services = styled.p`
+const styledParagraph = styled.p`
 color: #666;
 `
 const BGroundImage = styled.img`
@@ -44,19 +43,32 @@ ${mediaQueries("xl")`
 width:100%`} 
 `
 
-export default (props: any) => {
-  const { header, subheader, text } = props
+export interface InfoSectionProps {
+  logo?: any;
+  header: string;
+  subheader: string;
+  content: string[];
+  footerLogo?: any;
+}
+
+export default (props: InfoSectionProps) => {
+  const { header, subheader, content, logo, footerLogo } = props
   return (
-    <Container >
-      <LogoImage src={Logo} alt="logo" />
+    <Container>
+      {
+        logo && <LogoImage src={logo} alt="logo" />
+      }
       <Content >
         <Header> {header}</Header>
         <SubHeader>{subheader}</SubHeader>
-        {text.slice(1).map((item: any) => {
-          return <Services key={item.id}>{item.paragraph}</Services>
-        })}
+        {content.map((paragraph: string, index: number) =>
+          <p key={index}>{paragraph}</p>
+        )}
       </Content>
-      <BGroundImage src={Boss} alt="cat" />
+      {
+        footerLogo && <BGroundImage src={footerLogo} alt="cat" />
+      }
+
     </Container>
   );
 }
