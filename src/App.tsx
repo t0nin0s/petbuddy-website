@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Grid } from '@material-ui/core';
 import Header from './components/Header'
 import Button from './components/Button'
@@ -31,8 +31,20 @@ interface Data {
   }[]
 }
 
+const homeSection: InfoSectionProps = {
+  logo: '',
+  header: 'WHERE YOUR PET BECOMES OUR BUDDY',
+  subheader: 'PetBuddy',
+  content: [
+    'Pet Sitting l Pet Walking | Pet Grooming',
+    'We are PetBuddy and we specalise in looking after your pets, from walking your pooches, looking after your pet whilst you are away, to offering a specialist grooming service to your cats, our aim is to give you peace of mind that your pet is in great hands with us.'
+  ],
+  cta: true,
+  ctaText: 'Contact Us'
+}
+
 const aboutUsSection: InfoSectionProps = {
-  logo: 'asdlfajsd',
+  logo: '',
   header: 'Your pet, our buddy',
   subheader: 'Complete Pet Services',
   content: [
@@ -59,15 +71,21 @@ const reviews: Review[] = [
     user: '- Annabelle, Nottingham'
   }
 ]
+
 const ColumnToRowWrapper = styled.div`
 display: flex;
-flex - direction: column;
-padding - top: 4rem;
+flex-direction: column;
+padding-top: 4rem;
 ${mediaQueries("tablet")`
   flex-direction: row;
 `} `
 
-function App() {
+// const Wrapper = styled.div<InfoSectionProps>`
+// ${props => props.primary && css`
+// background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%)
+//  `}`
+
+const App: React.FC<InfoSectionProps> = ({ children, ...rest }) => {
   const [count, setCount] = useState(0);
   const clickHandler = () => {
     setCount(count + 1);
@@ -80,6 +98,15 @@ function App() {
           <Grid item xs={false} sm={false} md={false} lg={1} xl={1} />
           <Grid item xs={12} sm={12} md={12} lg={10} xl={10} >
             <Header />
+            <InfoSection
+              primary
+              logo={Logo}
+              header={homeSection.header}
+              subheader={homeSection.subheader}
+              content={homeSection.content}
+              cta={homeSection.cta}
+              ctaText={homeSection.ctaText}
+            />
             <InfoSection
               logo={Logo}
               header={aboutUsSection.header}
