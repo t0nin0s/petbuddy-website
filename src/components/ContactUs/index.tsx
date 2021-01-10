@@ -57,7 +57,7 @@ align-item:center;
 `
 
 export default (props: any) => {
-  const { email, follow, phone, contact, call } = props
+  const { email, phone, contact, call } = props
   return (
     <div className="contact-us__container">
       <ContactUsContainer>

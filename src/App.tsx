@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import { Grid } from '@material-ui/core';
 import Header from './components/Header'
@@ -8,8 +8,6 @@ import MainSection from './components/MainSection'
 import ContactUsContainer from './components/ContactUs';
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
-import Logo from './images/logo.jpg'
-import Boss from './images/Boss.jpg'
 
 interface Review {
   id: number;
@@ -83,10 +81,6 @@ ${mediaQueries("tablet")`
 `} `
 
 function App() {
-  const [count, setCount] = useState(0);
-  const clickHandler = () => {
-    setCount(count + 1);
-  }
 
   return (
     <div className="App" >
@@ -115,7 +109,6 @@ function App() {
               call="Call Us" />
           </Grid>
         </Grid>
-        <div> count is {count} </div>
         <Button>button</Button>
       </Grid >
       <Footer>Designed & managed by Pet Buddy@2020</Footer>
