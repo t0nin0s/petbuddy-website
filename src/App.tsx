@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { Grid } from '@material-ui/core';
 import Header from './components/Header'
 import Button from './components/Button'
@@ -80,12 +80,7 @@ ${mediaQueries("tablet")`
   flex-direction: row;
 `} `
 
-// const Wrapper = styled.div<InfoSectionProps>`
-// ${props => props.primary && css`
-// background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%)
-//  `}`
-
-const App: React.FC<InfoSectionProps> = ({ children, ...rest }) => {
+const App = () => {
   const [count, setCount] = useState(0);
   const clickHandler = () => {
     setCount(count + 1);

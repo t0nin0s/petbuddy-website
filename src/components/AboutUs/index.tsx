@@ -21,20 +21,24 @@ letter-spacing: 2px;
 line-height: 1.8em;
 align-items: center;
 padding:2rem;
-background: ${props => props.primary ? "red" : "yellow"}
+${props => props.primary && css`
+ background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%)
+`}
 `
 const LogoImage = styled.img`
-width: 25%;
+width: 75%;
 padding: 2rem;
-border-radius: 60%;
+margin-top:6rem;
 `
-const Content = styled.div<InfoSectionProps>`
+const Content = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 `
 const Header = styled.h3<InfoSectionProps>`
 font-size: 2rem;
+text-align: center;
+color:#a28bbb;
 ${mediaQueries("tablet")`
   font-size: 2rem`}
 `
@@ -44,22 +48,17 @@ color: black;
 ${mediaQueries("tablet")`
 font-size: 3rem`}
 `
-
-const StyledParagraph = styled.p<InfoSectionProps>``
-
 const BGroundImage = styled.img`
 width: 121%;
 margin-top: 4rem;
 ${mediaQueries("xl")`
 width:100%`}
 `
-const BookNowButton = styled(Button)``
-
 export default (props: InfoSectionProps) => {
   console.log("from index.js ", props) /* console.log shows the first info*/
-  const { header, subheader, content, logo, footerLogo, cta, ctaText } = props
+  const { header, subheader, content, logo, footerLogo, cta, ctaText, primary } = props
   return (
-    <Container>
+    <Container primary={primary}>
       {
         logo && <LogoImage src={logo} alt="logo" />
       }
@@ -67,9 +66,9 @@ export default (props: InfoSectionProps) => {
         <Header> {header}</Header>
         <SubHeader>{subheader}</SubHeader>
         {content!.map((paragraph: string, index: number) =>
-          <StyledParagraph key={index}>{paragraph}</StyledParagraph>
+          <p key={index}>{paragraph}</p>
         )}
-        {cta && <BookNowButton>{ctaText}</BookNowButton>}
+        {cta && <Button>{ctaText}</Button>}
       </Content>
       {
         footerLogo && <BGroundImage src={footerLogo} alt="cat" />
