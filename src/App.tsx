@@ -8,6 +8,8 @@ import MainSection from './components/MainSection'
 import ContactUsContainer from './components/ContactUs';
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
+import { CustomerReview } from './types'
+import reviews from './lib/data'
 
 interface Review {
   id: number;
@@ -93,7 +95,6 @@ padding-top: 4rem;
 ${mediaQueries("tablet")`
   flex-direction: row;
 `} `
-
 
 const App = () => {
   const [count, setCount] = useState(0);
