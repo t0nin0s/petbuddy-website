@@ -6,7 +6,7 @@ import Button from './components/Button'
 import Review from './components/Review'
 import InfoSection, { InfoSectionProps } from './components/AboutUs'
 import ContactUsContainer from './components/ContactUs'
-import reccomendations from './lib/data'
+import reviews from './lib/data'
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
 import Logo from './images/logo.jpg'
@@ -89,8 +89,8 @@ const App = () => {
               footerLogo={Boss}
             />
             <ColumnToRowWrapper >
-              {reccomendations.map(reccomendation => {
-                return <Review key={reccomendation.id} comment={reccomendation.comment} author={reccomendation.user} />
+              {reviews.map(review => {
+                return <Review key={review.id} comment={review.comment} author={review.user} />
               })}
             </ColumnToRowWrapper>
             <ContactUsContainer

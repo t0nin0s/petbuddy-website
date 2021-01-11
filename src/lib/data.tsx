@@ -18,4 +18,4 @@ const reviews: CustomerReview[] = [
   }
 ]
 
-export default reccomendations;
+export default reviews;
