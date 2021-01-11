@@ -1,6 +1,6 @@
 import { CustomerReview } from '../types'
 
-const reccomendations: CustomerReview[] = [
+const reviews: CustomerReview[] = [
   {
     id: 1,
     comment: '“PetBuddy are always available, even at short notice and Christmas. They take really great care of Lulu, giving lots of love and attention. Really pleased to have PetBuddy around”',
