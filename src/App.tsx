@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Grid } from '@material-ui/core'
 import Header from './components/Header'
@@ -64,10 +64,7 @@ ${mediaQueries("tablet")`
 `} `
 
 const App = () => {
-  const [count, setCount] = useState(0);
-  const clickHandler = () => {
-    setCount(count + 1);
-  }
+
   return (
     <div className="App" >
       <Grid container direction="column">
