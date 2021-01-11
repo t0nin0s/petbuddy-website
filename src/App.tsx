@@ -1,37 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core'
 import Header from './components/Header'
 import Button from './components/Button'
 import Review from './components/Review'
-import MainSection from './components/MainSection'
-import ContactUsContainer from './components/ContactUs';
+import InfoSection, { InfoSectionProps } from './components/AboutUs'
+import ContactUsContainer from './components/ContactUs'
+import reccomendations from './lib/data'
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
-import { CustomerReview } from './types'
-import reviews from './lib/data'
+import Logo from './images/logo.jpg'
+import Boss from './images/Boss.jpg'
 
 interface Review {
   id: number;
   comment: string;
   user: string;
 }
-interface MainSection {
-  header: string,
-  subheader: string,
-  services: string,
-  blurb: string
-}
-
-const topics: MainSection[] = [
-  {
-    header: 'WHERE YOUR PET BECOMES OUR BUDDY',
-    subheader: 'PetBuddy',
-    services: 'Pet Sitting l Pet Walking | Pet Grooming',
-    blurb: `We are PetBuddy and we specalise in looking after your pets, from walking your pooches,
-    looking after your pet whilst you are away, to offering a specialist grooming service to your
-    cats, our aim is to give you peace of mind that your pet is in great hands with us.`}
-]
 
 interface Data {
   headers: {
@@ -70,24 +55,6 @@ const aboutUsSection: InfoSectionProps = {
   ]
 }
 
-const reviews: Review[] = [
-  {
-    id: 1,
-    comment: '“PetBuddy are always available, even at short notice and Christmas. They take really great care of Lulu, giving lots of love and attention. Really pleased to have PetBuddy around”',
-    user: '- Maila, London'
-  },
-  {
-    id: 2,
-    comment: '“We always return from holiday to find Boss as happy as when we look after him ourselves, PetBuddy only have the best sitters and we trust them 100%”',
-    user: '- Margarita, London'
-  },
-  {
-    id: 3,
-    comment: '“George loves his walks with PetBuddy, they really treat him like he is their own, he comes back happy and having had the best playtime”',
-    user: '- Annabelle, Nottingham'
-  }
-]
-
 const ColumnToRowWrapper = styled.div`
 display: flex;
 flex-direction: column;
@@ -101,7 +68,7 @@ const App = () => {
   const clickHandler = () => {
     setCount(count + 1);
   }
-return (
+  return (
     <div className="App" >
       <Grid container direction="column">
         <Grid item container>
@@ -124,16 +91,9 @@ return (
               content={aboutUsSection.content}
               footerLogo={Boss}
             />
-            {topics.map(topic => {
-              return <MainSection
-                motto={topic.header}
-                title={topic.subheader}
-                services={topic.services}
-                blurb={topic.blurb} />
-            })}
             <ColumnToRowWrapper >
-              {reviews.map(review => {
-                return <Review key={review.id} comment={review.comment} author={review.user} />
+              {reccomendations.map(reccomendation => {
+                return <Review key={reccomendation.id} comment={reccomendation.comment} author={reccomendation.user} />
               })}
             </ColumnToRowWrapper>
             <ContactUsContainer
@@ -152,5 +112,6 @@ return (
 }
 
 export default App;
+
 
 
