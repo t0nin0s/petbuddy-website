@@ -7,7 +7,7 @@ import Review from './components/Review'
 import ContactUsContainer from './components/ContactUs';
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
-import { ReviewArray } from './types'
+import { CustomerReview } from './types'
 import reviews from './lib/data'
 
 const ColumnToRowWrapper = styled.div`

@@ -1,6 +1,6 @@
 import { types } from "util";
 
-export interface ReviewArray {
+export interface CustomerReview {
   id: number;
   comment: string;
   user: string;
