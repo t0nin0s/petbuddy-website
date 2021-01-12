@@ -2,17 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components'
 import Button from '../Button'
 import { mediaQueries } from '../../mediaqueries';
-
-export interface InfoSectionProps {
-  primary?: boolean,
-  logo?: any;
-  header?: string;
-  subheader?: string;
-  content?: string[];
-  footerLogo?: any;
-  cta?: boolean,
-  ctaText?: string
-}
+import { InfoSectionProps } from '../../types'
 
 const Container = styled.div<InfoSectionProps>`
 display: flex;
@@ -55,7 +45,6 @@ ${mediaQueries("xl")`
 width:100%`}
 `
 export default (props: InfoSectionProps) => {
-  console.log("from index.js ", props) /* console.log shows the first info*/
   const { header, subheader, content, logo, footerLogo, cta, ctaText, primary } = props
   return (
     <Container primary={primary}>
