@@ -4,7 +4,6 @@ import { Grid } from '@material-ui/core'
 import Header from './components/Header'
 import Review from './components/Review'
 import InfoSection from './components/AboutUs'
-import ServicesTitle from './components/ServicesTitle'
 import Services from './components/Services'
 import ContactUsContainer from './components/ContactUs'
 import { homeSection, aboutUsSection, reviews, services } from './lib/data'
@@ -13,6 +12,10 @@ import Footer from './components/Footer'
 import Logo from './images/logo.jpg'
 import Boss from './images/Boss.jpg'
 
+const h2Style = {
+  textAlign: "center" as "center"
+}
+
 const ColumnToRowWrapper = styled.div`
 display: flex;
 flex-direction: column;
@@ -20,6 +23,13 @@ padding-top: 4rem;
 ${mediaQueries("tablet")`
   flex-direction: row;
 `} `
+
+const ServicesWrapper = styled.div`
+${mediaQueries('laptop')`
+width:100%;
+display:flex;
+`}
+`
 
 const App = () => {
   return (
@@ -45,8 +55,8 @@ const App = () => {
               content={aboutUsSection.content}
               footerLogo={Boss}
             />
-            <ServicesTitle
-              title="Our Services">
+            <h2 style={h2Style}>Our Services</h2>
+            <ServicesWrapper>
               {services.map((service, index) => {
                 return <Services
                   key={`${service}${index / 10}`}
@@ -56,7 +66,7 @@ const App = () => {
                   cta={service.cta}
                   ctaText={service.ctaText} />
               })}
-            </ServicesTitle>
+            </ServicesWrapper>
             <ColumnToRowWrapper >
               {reviews.map(review => {
                 return <Review key={review.id} comment={review.comment} author={review.user} />
