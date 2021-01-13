@@ -43,21 +43,21 @@ const reviews: CustomerReview[] = [
 
 const services: Services[] = [
   {
-    image: '',
+    img: '/static/media/CatServices.f291c327.jpg',
     header: 'Cat Services',
     description: 'We offer a cat sitting and fully qualified grooming service, let us have your cat looking and feeling amazing.',
     cta: true,
     ctaText: 'Learn More'
   },
   {
-    image: '',
+    img: '/static/media/DogServices.83d7d5cf.jpg',
     header: 'Dog Services',
     description: 'Trust us with dog walking, sitting, behaviour and communication. Your pooch is guaranteed to be in safe hands with us.',
     cta: true,
     ctaText: 'Learn More'
   },
   {
-    image: '',
+    img: '/static/media/PetServices.16133fa5.jpg',
     header: 'Small Pet Services',
     description: 'PetBuddy will care for your pet, however small. Birds, fish, ferrets, whatever your pet is, you can count on us.',
     cta: true,
@@ -66,4 +66,4 @@ const services: Services[] = [
 ]
 
 export { reviews, services, homeSection, aboutUsSection }
-export default InfoSectionProps;
+

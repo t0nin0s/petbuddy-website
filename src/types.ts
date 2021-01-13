@@ -22,10 +22,10 @@ export interface CustomerReview {
 }
 
 export interface Services {
+  img: any,
   header: string;
   description: string;
   cta: boolean;
   ctaText: string;
-  image: any;
 }
 

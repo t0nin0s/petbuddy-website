@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import { Grid } from '@material-ui/core'
 import Header from './components/Header'
-import Button from './components/Button'
 import Review from './components/Review'
 import InfoSection from './components/AboutUs'
+import ServicesTitle from './components/ServicesTitle'
+import Services from './components/Services'
 import ContactUsContainer from './components/ContactUs'
-import { homeSection, aboutUsSection, reviews } from './lib/data'
+import { homeSection, aboutUsSection, reviews, services } from './lib/data'
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
 import Logo from './images/logo.jpg'
@@ -21,7 +22,6 @@ ${mediaQueries("tablet")`
 `} `
 
 const App = () => {
-
   return (
     <div className="App" >
       <Grid container direction="column">
@@ -45,6 +45,18 @@ const App = () => {
               content={aboutUsSection.content}
               footerLogo={Boss}
             />
+            <ServicesTitle
+              title="Our Services">
+              {services.map((service, index) => {
+                return <Services
+                  key={`${service}${index / 10}`}
+                  img={service.img}
+                  header={service.header}
+                  description={service.description}
+                  cta={service.cta}
+                  ctaText={service.ctaText} />
+              })}
+            </ServicesTitle>
             <ColumnToRowWrapper >
               {reviews.map(review => {
                 return <Review key={review.id} comment={review.comment} author={review.user} />
@@ -58,7 +70,6 @@ const App = () => {
               call="Call Us" />
           </Grid>
         </Grid>
-        <Button>button</Button>
       </Grid >
       <Footer>Designed & managed by Pet Buddy@2020</Footer>
     </div >
