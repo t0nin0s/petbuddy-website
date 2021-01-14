@@ -1,4 +1,7 @@
 import { CustomerReview, Services, InfoSectionProps } from '../types'
+import CatServices from '../images/CatServices.jpg';
+import DogServices from '../images/DogServices.jpg';
+import PetServices from '../images/PetServices.jpg';
 
 const homeSection: InfoSectionProps = {
   logo: '',
@@ -43,21 +46,21 @@ const reviews: CustomerReview[] = [
 
 const services: Services[] = [
   {
-    img: '/static/media/CatServices.f291c327.jpg',
+    img: CatServices,
     header: 'Cat Services',
     description: 'We offer a cat sitting and fully qualified grooming service, let us have your cat looking and feeling amazing.',
     cta: true,
     ctaText: 'Learn More'
   },
   {
-    img: '/static/media/DogServices.83d7d5cf.jpg',
+    img: DogServices,
     header: 'Dog Services',
-    description: 'Trust us with dog walking, sitting, behaviour and communication. Your pooch is guaranteed to be in safe hands with us.',
+    description: 'Trust us with dog walking, sitting, behaviour and communication. Your pooch is in safe hands with us.',
     cta: true,
     ctaText: 'Learn More'
   },
   {
-    img: '/static/media/PetServices.16133fa5.jpg',
+    img: PetServices,
     header: 'Small Pet Services',
     description: 'PetBuddy will care for your pet, however small. Birds, fish, ferrets, whatever your pet is, you can count on us.',
     cta: true,

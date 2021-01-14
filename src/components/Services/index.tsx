@@ -23,13 +23,18 @@ width:85%;
 border-radius:10px;
 ${mediaQueries("tablet")`
   width:70%`}
+  ${mediaQueries("laptop")`
+  width:70%;
+  height:140px`}
 `
 
 const Title = styled.h4`
 font-size: 24px
 `
 const Description = styled.div`
-margin-bottom: 2rem
+margin-bottom: 2rem;
+${mediaQueries("laptop")`
+  padding:0 2rem`}
 `
 
 export default (props: Services) => {
