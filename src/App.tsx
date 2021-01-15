@@ -82,7 +82,7 @@ const App = () => {
         </Grid>
       </Grid >
       <Footer>Designed & managed by Pet Buddy@2020</Footer>
-    </div >
+    </div>
   );
 }
 

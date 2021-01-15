@@ -23,11 +23,12 @@ width:85%;
 border-radius:10px;
 ${mediaQueries("tablet")`
   width:70%`}
-  ${mediaQueries("laptop")`
+${mediaQueries("laptop")`
   width:70%;
   height:140px`}
+${mediaQueries("xl")`
+  height:200px`}
 `
-
 const Title = styled.h4`
 font-size: 24px
 `

@@ -10,15 +10,25 @@ flex-direction: column;
 letter-spacing: 2px;
 line-height: 1.8em;
 align-items: center;
-padding:2rem;
+padding:4rem;
+${mediaQueries("xl")`
+  padding: 6rem`}
 ${props => props.primary && css`
- background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%)
-`}
+ background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%);
+    @media(min-width:1201px) {
+     flex-direction: row;
+    }
+ `}
 `
-const LogoImage = styled.img`
+const LogoImage = styled.img<InfoSectionProps>`
 width: 75%;
 padding: 2rem;
 margin-top:6rem;
+${mediaQueries("tablet")`
+  width: 50%`}
+${mediaQueries("laptop")`
+  width: 40%`}
+
 `
 const Content = styled.div`
 display: flex;
