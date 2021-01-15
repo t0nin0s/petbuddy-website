@@ -1,9 +1,9 @@
 export interface InfoSectionProps {
   primary?: boolean,
-  logo?: any;
+  logo?: React.ReactNode;
   header?: string;
   subheader?: string;
-  content?: string[];
+  content: string[];
   footerLogo?: any;
   cta?: boolean,
   ctaText?: string

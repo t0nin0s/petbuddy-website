@@ -6,65 +6,39 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ eAbkXN"
+        class="sc-gsTCUz enysSk"
       >
-        <img
-          alt="logo"
-          class="sc-gsTCUz kDaQRy"
-          src="logo.jpg"
-        />
         <div
-          class="sc-dlfnbm dZbXJN"
+          class="sc-dlfnbm iiZwPf"
         >
           <h3
-            class="sc-hKgILt hHkUvP"
+            class="sc-hKgILt bHsywd"
           >
              
           </h3>
           <h1
-            class="sc-eCssSg dfa-DUY"
-          />
-          <p
-            class="sc-jSgupP cYbSFW"
+            class="sc-eCssSg fIkUoq"
           />
         </div>
-        <img
-          alt="cat"
-          class="sc-gKsewC dGXnFK"
-          src="Boss.jpg"
-        />
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ eAbkXN"
+      class="sc-gsTCUz enysSk"
     >
-      <img
-        alt="logo"
-        class="sc-gsTCUz kDaQRy"
-        src="logo.jpg"
-      />
       <div
-        class="sc-dlfnbm dZbXJN"
+        class="sc-dlfnbm iiZwPf"
       >
         <h3
-          class="sc-hKgILt hHkUvP"
+          class="sc-hKgILt bHsywd"
         >
            
         </h3>
         <h1
-          class="sc-eCssSg dfa-DUY"
-        />
-        <p
-          class="sc-jSgupP cYbSFW"
+          class="sc-eCssSg fIkUoq"
         />
       </div>
-      <img
-        alt="cat"
-        class="sc-gKsewC dGXnFK"
-        src="Boss.jpg"
-      />
     </div>
   </div>,
   "debug": [Function],

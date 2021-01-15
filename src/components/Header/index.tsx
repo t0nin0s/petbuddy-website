@@ -8,6 +8,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import { mediaQueries } from '../../mediaqueries'
+import { PetBuddyLogo } from "../Logo";
 
 const linksArray: Array<string> = ['Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
 
@@ -70,6 +71,7 @@ export default function MenuAppBar() {
     <div className="header-container">
       <StyledAppBar position="fixed">
         <StyledToolbar>
+          <PetBuddyLogo size="small"/>
           <StyledTypography >
             PetBuddy
           </StyledTypography>

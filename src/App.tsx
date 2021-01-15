@@ -9,8 +9,8 @@ import ContactUsContainer from './components/ContactUs'
 import { homeSection, aboutUsSection, reviews } from './lib/data'
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
-import Logo from './images/logo.jpg'
 import Boss from './images/Boss.jpg'
+import { PetBuddyLogo } from './components/Logo';
 
 const ColumnToRowWrapper = styled.div`
 display: flex;
@@ -31,7 +31,7 @@ const App = () => {
             <Header />
             <InfoSection
               primary
-              logo={Logo}
+              logo={<PetBuddyLogo size="medium"/>}
               header={homeSection.header}
               subheader={homeSection.subheader}
               content={homeSection.content}
@@ -39,7 +39,7 @@ const App = () => {
               ctaText={homeSection.ctaText}
             />
             <InfoSection
-              logo={Logo}
+              logo={<PetBuddyLogo size="medium"/>}
               header={aboutUsSection.header}
               subheader={aboutUsSection.subheader}
               content={aboutUsSection.content}
