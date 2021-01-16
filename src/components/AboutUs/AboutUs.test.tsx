@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 
 describe('AboutUs component', () => {
   it('should render', () => {
-    const wrapper = render(<AboutUs />)
+    const wrapper = render(<AboutUs content={[]}/>)
     expect(wrapper).toMatchSnapshot();
   })
   it('should output some text', () => {

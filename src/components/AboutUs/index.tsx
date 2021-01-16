@@ -4,7 +4,7 @@ import Button from '../Button'
 import { mediaQueries } from '../../mediaqueries';
 import { InfoSectionProps } from '../../types'
 
-const Container = styled.div<InfoSectionProps>`
+const Container = styled.div<{primary?: boolean}>`
 display: flex;
 flex-direction: column;
 letter-spacing: 2px;
@@ -15,17 +15,13 @@ ${props => props.primary && css`
  background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%)
 `}
 `
-const LogoImage = styled.img`
-width: 75%;
-padding: 2rem;
-margin-top:6rem;
-`
+
 const Content = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 `
-const Header = styled.h3<InfoSectionProps>`
+const Header = styled.h3`
 font-size: 2rem;
 text-align: center;
 color:#a28bbb;
@@ -48,13 +44,11 @@ export default (props: InfoSectionProps) => {
   const { header, subheader, content, logo, footerLogo, cta, ctaText, primary } = props
   return (
     <Container primary={primary}>
-      {
-        logo && <LogoImage src={logo} alt="logo" />
-      }
+      { logo }
       <Content >
         <Header> {header}</Header>
         <SubHeader>{subheader}</SubHeader>
-        {content!.map((paragraph: string, index: number) =>
+        {content.map((paragraph: string, index: number) =>
           <p key={index}>{paragraph}</p>
         )}
         {cta && <Button>{ctaText}</Button>}

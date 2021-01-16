@@ -2,12 +2,12 @@ import React from "react";
 import styled from 'styled-components'
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import { mediaQueries } from '../../mediaqueries'
+import { PetBuddyLogo } from "../Logo";
 
 const linksArray: Array<string> = ['Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
 
@@ -17,10 +17,6 @@ const StyledToolbar = styled(Toolbar)`
   background-color: whitesmoke;
   color: purple;
   justify-content:space-between
-`
-const StyledTypography = styled(Typography)`
-  font-size:2rem;
-  font-weight:700
 `
 const StyledIconButton = styled(IconButton)`
 ${mediaQueries("medium")`
@@ -70,9 +66,7 @@ export default function MenuAppBar() {
     <div className="header-container">
       <StyledAppBar position="fixed">
         <StyledToolbar>
-          <StyledTypography >
-            PetBuddy
-          </StyledTypography>
+          <PetBuddyLogo size="small"/>
           <NavBarItems>{ourServices}</NavBarItems>
           <StyledIconButton
             onClick={handleMenu}>
