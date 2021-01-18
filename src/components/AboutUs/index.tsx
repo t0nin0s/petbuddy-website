@@ -4,7 +4,7 @@ import Button from '../Button'
 import { mediaQueries } from '../../mediaqueries';
 import { InfoSectionProps } from '../../types'
 
-const Container = styled.div<{primary?: boolean}>`
+const Container = styled.div<{ primary?: boolean }>`
 display: flex;
 flex-direction: column;
 letter-spacing: 2px;
@@ -15,7 +15,6 @@ ${props => props.primary && css`
  background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%)
 `}
 `
-
 const Content = styled.div`
 display: flex;
 flex-direction: column;
@@ -32,19 +31,25 @@ const SubHeader = styled.h1`
 text-align: center;
 color: black;
 ${mediaQueries("tablet")`
-font-size: 3rem`}
+  font-size: 3rem`}
 `
 const BGroundImage = styled.img`
 width: 121%;
 margin-top: 4rem;
+${mediaQueries("tablet")`
+  width:109%;
+  height:27rem;
+`}
 ${mediaQueries("xl")`
-width:100%`}
+  object-fit:cover;
+  height:30rem;
+  `}
 `
 export default (props: InfoSectionProps) => {
   const { header, subheader, content, logo, footerLogo, cta, ctaText, primary } = props
   return (
     <Container primary={primary}>
-      { logo }
+      { logo}
       <Content >
         <Header> {header}</Header>
         <SubHeader>{subheader}</SubHeader>
