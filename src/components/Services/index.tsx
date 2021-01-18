@@ -12,7 +12,7 @@ width:90%;
 margin:0 auto;
 padding:1rem 0 3rem 0;
 ${mediaQueries('xl')`
-  height:60%;
+  max-width: '450px'
   `}
 `
 const Img = styled.img`
