@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { Grid } from '@material-ui/core'
 import Header from './components/Header'
-import Button from './components/Button'
+import Services from './components/Services'
 import Review from './components/Review'
 import InfoSection from './components/AboutUs'
 import ContactUsContainer from './components/ContactUs'
-import { homeSection, aboutUsSection, reviews } from './lib/data'
+import { homeSection, aboutUsSection, reviews, services } from './lib/data'
 import { mediaQueries } from './mediaqueries'
 import Footer from './components/Footer'
 import Boss from './images/Boss.jpg'
@@ -15,10 +15,14 @@ import { PetBuddyLogo } from './components/Logo';
 const ColumnToRowWrapper = styled.div`
 display: flex;
 flex-direction: column;
-padding-top: 4rem;
 ${mediaQueries("tablet")`
-  flex-direction: row;
+flex-direction : row;
 `} `
+
+const h2Style = {
+  textAlign: "center" as "center",
+  fontSize: 28
+}
 
 const App = () => {
 
@@ -31,7 +35,7 @@ const App = () => {
             <Header />
             <InfoSection
               primary
-              logo={<PetBuddyLogo size="medium"/>}
+              logo={<PetBuddyLogo size="medium" />}
               header={homeSection.header}
               subheader={homeSection.subheader}
               content={homeSection.content}
@@ -39,13 +43,25 @@ const App = () => {
               ctaText={homeSection.ctaText}
             />
             <InfoSection
-              logo={<PetBuddyLogo size="medium"/>}
+              logo={<PetBuddyLogo size="medium" />}
               header={aboutUsSection.header}
               subheader={aboutUsSection.subheader}
               content={aboutUsSection.content}
               footerLogo={Boss}
             />
-            <ColumnToRowWrapper >
+            <h2 style={h2Style}>Our Services</h2>
+            <ColumnToRowWrapper>
+              {services.map((service, index) => {
+                return <Services
+                  key={`${service}${index / 10}`}
+                  image={service.image}
+                  header={service.header}
+                  description={service.description}
+                  cta={service.cta}
+                  ctaText={service.ctaText} />
+              })}
+            </ColumnToRowWrapper>
+            <ColumnToRowWrapper>
               {reviews.map(review => {
                 return <Review key={review.id} comment={review.comment} author={review.user} />
               })}
@@ -58,7 +74,6 @@ const App = () => {
               call="Call Us" />
           </Grid>
         </Grid>
-        <Button>button</Button>
       </Grid >
       <Footer>Designed & managed by Pet Buddy@2020</Footer>
     </div >

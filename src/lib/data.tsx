@@ -1,4 +1,7 @@
 import { CustomerReview, Services, InfoSectionProps } from '../types'
+import CatServices from '../images/CatServices.jpg'
+import DogServices from '../images/DogServices.jpg'
+import PetServices from '../images/PetServices.jpg'
 
 const homeSection: InfoSectionProps = {
   logo: '',
@@ -43,21 +46,21 @@ const reviews: CustomerReview[] = [
 
 const services: Services[] = [
   {
-    image: '',
+    image: CatServices,
     header: 'Cat Services',
     description: 'We offer a cat sitting and fully qualified grooming service, let us have your cat looking and feeling amazing.',
     cta: true,
     ctaText: 'Learn More'
   },
   {
-    image: '',
+    image: DogServices,
     header: 'Dog Services',
     description: 'Trust us with dog walking, sitting, behaviour and communication. Your pooch is guaranteed to be in safe hands with us.',
     cta: true,
     ctaText: 'Learn More'
   },
   {
-    image: '',
+    image: PetServices,
     header: 'Small Pet Services',
     description: 'PetBuddy will care for your pet, however small. Birds, fish, ferrets, whatever your pet is, you can count on us.',
     cta: true,
@@ -66,4 +69,4 @@ const services: Services[] = [
 ]
 
 export { reviews, services, homeSection, aboutUsSection }
-export default InfoSectionProps;
+
