@@ -6,77 +6,61 @@ import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const ContactUsContainer = styled.div`
-display: flex;
-flex-flow: column nowrap;
-padding: 3rem .5rem;
-align-items: center;
-justify-content: center;
-width: 75%;
-margin: 0 auto;
+display:flex;
+flex-flow:row wrap;
+width: 85%;
+margin: 2rem auto;
+padding-bottom:2rem;
 border-radius: 10px;
-margin-bottom: 5rem;
-background-color: #F5F5F5;
+background:#EBEBEB;
 font-weight:700;
+box-shadow:2px 5px 5px #888888;
+${mediaQueries('tablet')`
+  position:relative;
+  top:-2rem;
+  margin: 0 auto`}
+${mediaQueries('laptop')`
+flex-flow: row nowrap;
+width:95%;
+`}
 `
 const ContactUs = styled.div`
 display:flex;
-flex-flow: column;
-align-items: center;
-width: 80%;
-margin:1rem 0;
+flex-direction:column;
+align-items:center;
+width:45%;
 color:#4B0082;
-font-weight:400;
 `
 const ContactIcon = styled(FontAwesomeIcon)`
 border: 2px solid #f48fb1;
 border-radius: 60px;
-box-shadow: 0px 0px 2px #888;
-padding: 0.5em 0.6em;
 color:#f48fb1;
-margin:1rem 0;
-`
-const EmailUs = styled.div`
- margin:1rem 0;
- font-size: 20px;
- font-weight: 700;
- ${mediaQueries("tablet")`
-  flex-flow:column;
-  `}
-`
-const CallUs = styled.div`
- margin:1rem 0;
- font-size: 20px;
- font-weight: 700;
-`
-const FollowUs = styled.div`
-display:flex;
-align-self:normal;
-justify-content: space-around;
-margin-top: 2rem 0;
-align-item:center;
+margin:2rem 0;
+padding:.8rem;
+text-decoration:none;
 `
 
 export default (props: any) => {
-  const { email, phone, contact, call } = props
+  const { email, phone, insta, fb } = props
   return (
-    <div className="contact-us__container">
-      <ContactUsContainer>
-        <ContactUs>
-          {contact}
-          <ContactIcon icon={faEnvelope} size="3x"></ContactIcon>
-          <EmailUs>{email}</EmailUs>
-        </ContactUs>
-        <ContactUs>
-          {call}
-          <ContactIcon icon={faPhoneAlt} size="3x"></ContactIcon>
-          <CallUs>{phone}</CallUs>
-        </ContactUs>
-        <FollowUs>
-          <ContactIcon icon={faInstagram} size="3x"></ContactIcon>
-          <ContactIcon icon={faFacebook} size="3x"></ContactIcon>
-        </FollowUs>
-      </ContactUsContainer>
-    </div >
+    <ContactUsContainer>
+      <ContactUs>
+        <ContactIcon icon={faEnvelope} size="3x"></ContactIcon>
+        <p>{email}</p>
+      </ContactUs>
+      <ContactUs>
+        <ContactIcon icon={faPhoneAlt} size="3x"></ContactIcon>
+        <p>{phone}</p>
+      </ContactUs>
+      <ContactUs>
+        <ContactIcon icon={faInstagram} size="3x"></ContactIcon>
+        <p>{insta}</p>
+      </ContactUs>
+      <ContactUs>
+        <ContactIcon icon={faFacebook} size="3x"></ContactIcon>
+        <p>{fb}</p>
+      </ContactUs>
+    </ContactUsContainer >
   )
 }
 

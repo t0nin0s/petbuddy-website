@@ -67,11 +67,11 @@ const App = () => {
               })}
             </ColumnToRowWrapper>
             <ContactUsContainer
-              email="petbuddyinfo.uk@gmail.com"
+              email="Email"
               phone="07753883444"
               follow="Follow Us"
-              contact="Contact Us"
-              call="Call Us" />
+              insta="Instagram"
+              fb="Facebook" />
           </Grid>
         </Grid>
       </Grid >
