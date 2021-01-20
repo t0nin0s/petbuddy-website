@@ -11,12 +11,12 @@ import { PetBuddyLogo } from "../Logo";
 
 const linksArray: Array<string> = ['Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
 
-const StyledAppBar = styled(AppBar)``
-
+const StyledAppBar = styled(AppBar)`
+max-width:1280px;
+position:sticky;
+background-color: whitesmoke;
+`
 const StyledToolbar = styled(Toolbar)`
-  background-color: whitesmoke;
-  color: purple;
-  justify-content:space-between
 `
 const StyledIconButton = styled(IconButton)`
 ${mediaQueries("medium")`
@@ -37,13 +37,13 @@ margin-left: 3.5 %;
 const NavBarItems = styled.div`
 display: none;
 ${mediaQueries("medium")`
-    display:flex;
-    flex-direction:row;
-    flex-grow:1;
-    justify-content: flex-end;
-    color:#f48fb1;
-    font-weight: 900;
-    `}
+  display:flex;
+  flex-direction:row;
+  flex-grow:1;
+  justify-content: flex-end;
+  color:#f48fb1;
+  font-weight: 900;
+  `}
 `
 
 export default function MenuAppBar() {
@@ -63,27 +63,25 @@ export default function MenuAppBar() {
   })
 
   return (
-    <div className="header-container">
-      <StyledAppBar position="fixed">
-        <StyledToolbar>
-          <PetBuddyLogo size="small"/>
-          <NavBarItems>{ourServices}</NavBarItems>
-          <StyledIconButton
-            onClick={handleMenu}>
-            <StyledMenuIcon />
-          </StyledIconButton>
-          <StyledMenu
-            anchorEl={anchorEl}
-            getContentAnchorEl={null}
-            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-            transformOrigin={{ vertical: "top", horizontal: "center" }}
-            open={open}
-            onClose={handleClose}
-          >
-            {ourServices}
-          </StyledMenu>
-        </StyledToolbar>
-      </StyledAppBar>
-    </div>
+    <StyledAppBar>
+      <StyledToolbar>
+        <PetBuddyLogo size="small" />
+        <NavBarItems>{ourServices}</NavBarItems>
+        <StyledIconButton
+          onClick={handleMenu}>
+          <StyledMenuIcon />
+        </StyledIconButton>
+        <StyledMenu
+          anchorEl={anchorEl}
+          getContentAnchorEl={null}
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+          transformOrigin={{ vertical: "top", horizontal: "center" }}
+          open={open}
+          onClose={handleClose}
+        >
+          {ourServices}
+        </StyledMenu>
+      </StyledToolbar>
+    </StyledAppBar>
   );
 }

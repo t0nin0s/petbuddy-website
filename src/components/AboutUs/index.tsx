@@ -7,10 +7,11 @@ import { InfoSectionProps } from '../../types'
 const Container = styled.div<{ primary?: boolean }>`
 display: flex;
 flex-direction: column;
+padding-top:3rem;
 letter-spacing: 2px;
 line-height: 1.8em;
 align-items: center;
-padding:2rem;
+max-width:1280px;
 ${props => props.primary && css`
  background:linear-gradient(90deg,rgba(120,128,145, 0.34) 40%,#EBEBEB 0%)
 `}
@@ -19,27 +20,31 @@ const Content = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+padding:2rem;
 `
 const Header = styled.h3`
 font-size: 2rem;
 text-align: center;
 color:#a28bbb;
 ${mediaQueries("tablet")`
-  font-size: 2rem`}
+  font-size: 2rem
+  `}
 `
 const SubHeader = styled.h1`
 text-align: center;
 color: black;
 ${mediaQueries("tablet")`
-  font-size: 3rem`}
+  font-size: 3rem
+  `}
 `
 const BGroundImage = styled.img`
-width: 121%;
-margin-top: 4rem;
+width: 100%;
+max-width:1280px;
+margin-top: 2rem;
 ${mediaQueries("tablet")`
-  width:109%;
+  object-fit:cover;
   height:27rem;
-`}
+  `}
 ${mediaQueries("xl")`
   object-fit:cover;
   height:30rem;
