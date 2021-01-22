@@ -15,13 +15,15 @@ import { PetBuddyLogo } from './components/Logo';
 const ColumnToRowWrapper = styled.div`
 display: flex;
 flex-direction: column;
+max-width:1280px;
 ${mediaQueries("tablet")`
 flex-direction : row;
 `} `
 
 const h2Style = {
   textAlign: "center" as "center",
-  fontSize: 28
+  fontSize: 28,
+  maxWidth: 1280
 }
 
 const App = () => {
@@ -72,10 +74,10 @@ const App = () => {
               follow="Follow Us"
               insta="Instagram"
               fb="Facebook" />
+            <Footer>Designed & managed by Pet Buddy@2020</Footer>
           </Grid>
         </Grid>
       </Grid >
-      <Footer>Designed & managed by Pet Buddy@2020</Footer>
     </div >
   );
 }
