@@ -8,7 +8,6 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 const ContactUsContainer = styled.div`
 display:flex;
 flex-flow:row wrap;
-max-width:1280px;
 width:85%;
 margin:1rem auto;
 padding-bottom:2rem;
@@ -17,19 +16,22 @@ background:#EBEBEB;
 font-weight:700;
 box-shadow:2px 5px 5px #888888;
 ${mediaQueries('tablet')`
-  position:relative;
-  top:-2rem;
- `}
+  position:sticky;
+  margin-top: -2rem;
+  `}
 ${mediaQueries('laptop')`
   flex-flow: row nowrap;
   `}
-`
+ `
 const ContactUs = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
 width:45%;
 color:#4B0082;
+${mediaQueries('xl')`
+  width:25%;
+  `}
 `
 const ContactIcon = styled(FontAwesomeIcon)`
 border: 2px solid #f48fb1;
