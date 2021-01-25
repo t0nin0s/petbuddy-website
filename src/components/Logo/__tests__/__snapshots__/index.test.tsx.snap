@@ -6,10 +6,9 @@ Object {
   "baseElement": <body>
     <div>
       <svg
-        height="545"
         version="1.1"
         viewBox="0 0 400.117 546.252"
-        width=""
+        width="545"
       >
         <g
           id="Dog"
@@ -148,10 +147,9 @@ Object {
   </body>,
   "container": <div>
     <svg
-      height="545"
       version="1.1"
       viewBox="0 0 400.117 546.252"
-      width=""
+      width="545"
     >
       <g
         id="Dog"
@@ -347,10 +345,9 @@ Object {
   "baseElement": <body>
     <div>
       <svg
-        height="300"
         version="1.1"
         viewBox="0 0 400.117 546.252"
-        width=""
+        width="300"
       >
         <g
           id="Dog"
@@ -489,10 +486,9 @@ Object {
   </body>,
   "container": <div>
     <svg
-      height="300"
       version="1.1"
       viewBox="0 0 400.117 546.252"
-      width=""
+      width="300"
     >
       <g
         id="Dog"
@@ -688,10 +684,9 @@ Object {
   "baseElement": <body>
     <div>
       <svg
-        height="55"
         version="1.1"
         viewBox="0 0 400.117 546.252"
-        width=""
+        width="55"
       >
         <g
           id="Dog"
@@ -830,10 +825,9 @@ Object {
   </body>,
   "container": <div>
     <svg
-      height="55"
       version="1.1"
       viewBox="0 0 400.117 546.252"
-      width=""
+      width="55"
     >
       <g
         id="Dog"

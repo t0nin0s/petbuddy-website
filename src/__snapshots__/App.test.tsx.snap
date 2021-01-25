@@ -20,20 +20,19 @@ Object {
             <div
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-10 MuiGrid-grid-xl-10"
             >
-              <div
-                class="header-container"
+              <header
+                class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary sc-bdfBwQ jGLINk mui-fixed MuiPaper-elevation4"
               >
-                <header
-                  class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary sc-bdfBwQ mui-fixed MuiPaper-elevation4"
+                <div
+                  class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz fiEZUx MuiToolbar-gutters"
                 >
                   <div
-                    class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz fWJebG MuiToolbar-gutters"
+                    class="sc-dlfnbm jIZHvQ"
                   >
                     <svg
-                      height="55"
                       version="1.1"
                       viewBox="0 0 400.117 546.252"
-                      width=""
+                      width="55"
                     >
                       <g
                         id="Dog"
@@ -168,99 +167,103 @@ Object {
                         />
                       </g>
                     </svg>
-                    <div
-                      class="sc-jSgupP izXgAz"
+                  </div>
+                  <p
+                    class="MuiTypography-root sc-hKgILt krQsvT MuiTypography-body1"
+                  >
+                    PetBuddy
+                  </p>
+                  <div
+                    class="sc-iBPRYJ waAeF"
+                  >
+                    <li
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                      role="menuitem"
+                      tabindex="-1"
                     >
-                      <li
-                        aria-disabled="false"
-                        class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                        role="menuitem"
-                        tabindex="-1"
-                      >
-                        Cat Services
-                        <span
-                          class="MuiTouchRipple-root"
-                        />
-                      </li>
-                      <li
-                        aria-disabled="false"
-                        class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                        role="menuitem"
-                        tabindex="-1"
-                      >
-                        Dog Services
-                        <span
-                          class="MuiTouchRipple-root"
-                        />
-                      </li>
-                      <li
-                        aria-disabled="false"
-                        class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                        role="menuitem"
-                        tabindex="-1"
-                      >
-                        Small Pet Services
-                        <span
-                          class="MuiTouchRipple-root"
-                        />
-                      </li>
-                      <li
-                        aria-disabled="false"
-                        class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                        role="menuitem"
-                        tabindex="-1"
-                      >
-                        Become a PBuddy
-                        <span
-                          class="MuiTouchRipple-root"
-                        />
-                      </li>
-                      <li
-                        aria-disabled="false"
-                        class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                        role="menuitem"
-                        tabindex="-1"
-                      >
-                        Contact Us
-                        <span
-                          class="MuiTouchRipple-root"
-                        />
-                      </li>
-                    </div>
-                    <button
-                      class="MuiButtonBase-root MuiIconButton-root sc-dlfnbm sbRdh"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root sc-hKgILt gpMiNR"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                          />
-                        </svg>
-                      </span>
+                      Cat Services
                       <span
                         class="MuiTouchRipple-root"
                       />
-                    </button>
+                    </li>
+                    <li
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Dog Services
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </li>
+                    <li
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Small Pet Services
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </li>
+                    <li
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Become a PBuddy
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </li>
+                    <li
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Contact Us
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </li>
                   </div>
-                </header>
-              </div>
+                  <button
+                    class="MuiButtonBase-root MuiIconButton-root sc-eCssSg"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root sc-jSgupP clEmBN"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </header>
               <div
-                class="sc-bqyKva eFpKtk"
+                class="sc-hBEYos kThoos"
               >
                 <svg
-                  height="300"
                   version="1.1"
                   viewBox="0 0 400.117 546.252"
-                  width=""
+                  width="300"
                 >
                   <g
                     id="Dog"
@@ -396,16 +399,16 @@ Object {
                   </g>
                 </svg>
                 <div
-                  class="sc-kstrdz dhnozI"
+                  class="sc-fodVxV fhGaLn"
                 >
                   <h3
-                    class="sc-hBEYos ka-dgrq"
+                    class="sc-fFubgz gxMaqo"
                   >
                      
                     WHERE YOUR PET BECOMES OUR BUDDY
                   </h3>
                   <h1
-                    class="sc-fodVxV fjMFAx"
+                    class="sc-bkzZxe kHxVrG"
                   >
                     PetBuddy
                   </h1>
@@ -416,7 +419,7 @@ Object {
                     We are PetBuddy and we specalise in looking after your pets, from walking your pooches, looking after your pet whilst you are away, to offering a specialist grooming service to your cats, our aim is to give you peace of mind that your pet is in great hands with us.
                   </p>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                     tabindex="0"
                     type="button"
                   >
@@ -432,13 +435,12 @@ Object {
                 </div>
               </div>
               <div
-                class="sc-bqyKva dkBLRu"
+                class="sc-hBEYos jLzNaC"
               >
                 <svg
-                  height="300"
                   version="1.1"
                   viewBox="0 0 400.117 546.252"
-                  width=""
+                  width="300"
                 >
                   <g
                     id="Dog"
@@ -574,16 +576,16 @@ Object {
                   </g>
                 </svg>
                 <div
-                  class="sc-kstrdz dhnozI"
+                  class="sc-fodVxV fhGaLn"
                 >
                   <h3
-                    class="sc-hBEYos ka-dgrq"
+                    class="sc-fFubgz gxMaqo"
                   >
                      
                     Your pet, our buddy
                   </h3>
                   <h1
-                    class="sc-fodVxV fjMFAx"
+                    class="sc-bkzZxe kHxVrG"
                   >
                     Complete Pet Services
                   </h1>
@@ -599,39 +601,39 @@ Object {
                 </div>
                 <img
                   alt="cat"
-                  class="sc-fFubgz VAvEn"
+                  class="sc-idOhPF dUPAjq"
                   src="Boss.jpg"
                 />
               </div>
               <h2
-                style="text-align: center; font-size: 28px;"
+                style="text-align: center; font-size: 28px; max-width: 1280px;"
               >
                 Our Services
               </h2>
               <div
-                class="sc-dmlrTW lhAlkI"
+                class="sc-fKFyDc fedawu"
               >
                 <div
-                  class="sc-iBPRYJ jnacfu"
+                  class="sc-pFZIQ bSsYSM"
                 >
                   <img
                     alt="Service image"
-                    class="sc-fubCfw QXVZd"
+                    class="sc-jrAGrp bteZJe"
                     src="CatServices.jpg"
                   />
                   <h3
-                    class="sc-pFZIQ"
+                    class="sc-kEjbxe"
                   >
                      
                     Cat Services
                   </h3>
                   <p
-                    class="sc-jrAGrp UxbBo"
+                    class="sc-iqHYGH ksUUiG"
                   >
                     We offer a cat sitting and fully qualified grooming service, let us have your cat looking and feeling amazing.
                   </p>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                     tabindex="0"
                     type="button"
                   >
@@ -646,26 +648,26 @@ Object {
                   </button>
                 </div>
                 <div
-                  class="sc-iBPRYJ jnacfu"
+                  class="sc-pFZIQ bSsYSM"
                 >
                   <img
                     alt="Service image"
-                    class="sc-fubCfw QXVZd"
+                    class="sc-jrAGrp bteZJe"
                     src="DogServices.jpg"
                   />
                   <h3
-                    class="sc-pFZIQ"
+                    class="sc-kEjbxe"
                   >
                      
                     Dog Services
                   </h3>
                   <p
-                    class="sc-jrAGrp UxbBo"
+                    class="sc-iqHYGH ksUUiG"
                   >
                     Trust us with dog walking, sitting, behaviour and communication. Your pooch is guaranteed to be in safe hands with us.
                   </p>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                     tabindex="0"
                     type="button"
                   >
@@ -680,26 +682,26 @@ Object {
                   </button>
                 </div>
                 <div
-                  class="sc-iBPRYJ jnacfu"
+                  class="sc-pFZIQ bSsYSM"
                 >
                   <img
                     alt="Service image"
-                    class="sc-fubCfw QXVZd"
+                    class="sc-jrAGrp bteZJe"
                     src="PetServices.jpg"
                   />
                   <h3
-                    class="sc-pFZIQ"
+                    class="sc-kEjbxe"
                   >
                      
                     Small Pet Services
                   </h3>
                   <p
-                    class="sc-jrAGrp UxbBo"
+                    class="sc-iqHYGH ksUUiG"
                   >
                     PetBuddy will care for your pet, however small. Birds, fish, ferrets, whatever your pet is, you can count on us.
                   </p>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                     tabindex="0"
                     type="button"
                   >
@@ -715,14 +717,14 @@ Object {
                 </div>
               </div>
               <div
-                class="sc-dmlrTW lhAlkI"
+                class="sc-fKFyDc fedawu"
               >
                 <div
-                  class="sc-kEjbxe gIcwcU review-container"
+                  class="sc-crrsfI haiVCs review-container"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root sc-crrsfI uhWfK"
+                    class="MuiSvgIcon-root sc-bqyKva cBGoCX"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -731,26 +733,26 @@ Object {
                     />
                   </svg>
                   <div
-                    class="sc-iqHYGH dHIrVn"
+                    class="sc-dQppl dhFVuw"
                   >
                     <p
-                      class="sc-dQppl giaaCA"
+                      class="sc-kstrdz jLBsGZ"
                     >
                       “PetBuddy are always available, even at short notice and Christmas. They take really great care of Lulu, giving lots of love and attention. Really pleased to have PetBuddy around”
                     </p>
                     <p
-                      class="sc-dQppl giaaCA"
+                      class="sc-kstrdz jLBsGZ"
                     >
                       - Maila, London
                     </p>
                   </div>
                 </div>
                 <div
-                  class="sc-kEjbxe gIcwcU review-container"
+                  class="sc-crrsfI haiVCs review-container"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root sc-crrsfI uhWfK"
+                    class="MuiSvgIcon-root sc-bqyKva cBGoCX"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -759,26 +761,26 @@ Object {
                     />
                   </svg>
                   <div
-                    class="sc-iqHYGH dHIrVn"
+                    class="sc-dQppl dhFVuw"
                   >
                     <p
-                      class="sc-dQppl giaaCA"
+                      class="sc-kstrdz jLBsGZ"
                     >
                       “We always return from holiday to find Boss as happy as when we look after him ourselves, PetBuddy only have the best sitters and we trust them 100%”
                     </p>
                     <p
-                      class="sc-dQppl giaaCA"
+                      class="sc-kstrdz jLBsGZ"
                     >
                       - Margarita, London
                     </p>
                   </div>
                 </div>
                 <div
-                  class="sc-kEjbxe gIcwcU review-container"
+                  class="sc-crrsfI haiVCs review-container"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root sc-crrsfI uhWfK"
+                    class="MuiSvgIcon-root sc-bqyKva cBGoCX"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -787,15 +789,15 @@ Object {
                     />
                   </svg>
                   <div
-                    class="sc-iqHYGH dHIrVn"
+                    class="sc-dQppl dhFVuw"
                   >
                     <p
-                      class="sc-dQppl giaaCA"
+                      class="sc-kstrdz jLBsGZ"
                     >
                       “George loves his walks with PetBuddy, they really treat him like he is their own, he comes back happy and having had the best playtime”
                     </p>
                     <p
-                      class="sc-dQppl giaaCA"
+                      class="sc-kstrdz jLBsGZ"
                     >
                       - Annabelle, Nottingham
                     </p>
@@ -803,14 +805,14 @@ Object {
                 </div>
               </div>
               <div
-                class="sc-bkzZxe dKzyaY"
+                class="sc-dIUggk hVZwpL"
               >
                 <div
-                  class="sc-idOhPF kfnbIs"
+                  class="sc-hHftDr imrbpW"
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-envelope fa-w-16 fa-3x sc-dIUggk gYXUHX"
+                    class="svg-inline--fa fa-envelope fa-w-16 fa-3x sc-dmlrTW jJLKmY"
                     data-icon="envelope"
                     data-prefix="fas"
                     focusable="false"
@@ -828,11 +830,11 @@ Object {
                   </p>
                 </div>
                 <div
-                  class="sc-idOhPF kfnbIs"
+                  class="sc-hHftDr imrbpW"
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-phone-alt fa-w-16 fa-3x sc-dIUggk gYXUHX"
+                    class="svg-inline--fa fa-phone-alt fa-w-16 fa-3x sc-dmlrTW jJLKmY"
                     data-icon="phone-alt"
                     data-prefix="fas"
                     focusable="false"
@@ -850,11 +852,11 @@ Object {
                   </p>
                 </div>
                 <div
-                  class="sc-idOhPF kfnbIs"
+                  class="sc-hHftDr imrbpW"
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-instagram fa-w-14 fa-3x sc-dIUggk gYXUHX"
+                    class="svg-inline--fa fa-instagram fa-w-14 fa-3x sc-dmlrTW jJLKmY"
                     data-icon="instagram"
                     data-prefix="fab"
                     focusable="false"
@@ -872,11 +874,11 @@ Object {
                   </p>
                 </div>
                 <div
-                  class="sc-idOhPF kfnbIs"
+                  class="sc-hHftDr imrbpW"
                 >
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-facebook fa-w-16 fa-3x sc-dIUggk gYXUHX"
+                    class="svg-inline--fa fa-facebook fa-w-16 fa-3x sc-dmlrTW jJLKmY"
                     data-icon="facebook"
                     data-prefix="fab"
                     focusable="false"
@@ -894,14 +896,14 @@ Object {
                   </p>
                 </div>
               </div>
+              <footer
+                class="sc-kfzAmx eAVsUr"
+              >
+                Designed & managed by Pet Buddy@2020
+              </footer>
             </div>
           </div>
         </div>
-        <footer
-          class="sc-hHftDr fzfbuO"
-        >
-          Designed & managed by Pet Buddy@2020
-        </footer>
       </div>
     </div>
   </body>,
@@ -921,20 +923,19 @@ Object {
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-10 MuiGrid-grid-xl-10"
           >
-            <div
-              class="header-container"
+            <header
+              class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary sc-bdfBwQ jGLINk mui-fixed MuiPaper-elevation4"
             >
-              <header
-                class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary sc-bdfBwQ mui-fixed MuiPaper-elevation4"
+              <div
+                class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz fiEZUx MuiToolbar-gutters"
               >
                 <div
-                  class="MuiToolbar-root MuiToolbar-regular sc-gsTCUz fWJebG MuiToolbar-gutters"
+                  class="sc-dlfnbm jIZHvQ"
                 >
                   <svg
-                    height="55"
                     version="1.1"
                     viewBox="0 0 400.117 546.252"
-                    width=""
+                    width="55"
                   >
                     <g
                       id="Dog"
@@ -1069,99 +1070,103 @@ Object {
                       />
                     </g>
                   </svg>
-                  <div
-                    class="sc-jSgupP izXgAz"
+                </div>
+                <p
+                  class="MuiTypography-root sc-hKgILt krQsvT MuiTypography-body1"
+                >
+                  PetBuddy
+                </p>
+                <div
+                  class="sc-iBPRYJ waAeF"
+                >
+                  <li
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                    role="menuitem"
+                    tabindex="-1"
                   >
-                    <li
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                      role="menuitem"
-                      tabindex="-1"
-                    >
-                      Cat Services
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </li>
-                    <li
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                      role="menuitem"
-                      tabindex="-1"
-                    >
-                      Dog Services
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </li>
-                    <li
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                      role="menuitem"
-                      tabindex="-1"
-                    >
-                      Small Pet Services
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </li>
-                    <li
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                      role="menuitem"
-                      tabindex="-1"
-                    >
-                      Become a PBuddy
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </li>
-                    <li
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
-                      role="menuitem"
-                      tabindex="-1"
-                    >
-                      Contact Us
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </li>
-                  </div>
-                  <button
-                    class="MuiButtonBase-root MuiIconButton-root sc-dlfnbm sbRdh"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiIconButton-label"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root sc-hKgILt gpMiNR"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                        />
-                      </svg>
-                    </span>
+                    Cat Services
                     <span
                       class="MuiTouchRipple-root"
                     />
-                  </button>
+                  </li>
+                  <li
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Dog Services
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </li>
+                  <li
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Small Pet Services
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </li>
+                  <li
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Become a PBuddy
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </li>
+                  <li
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Contact Us
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </li>
                 </div>
-              </header>
-            </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root sc-eCssSg"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root sc-jSgupP clEmBN"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </header>
             <div
-              class="sc-bqyKva eFpKtk"
+              class="sc-hBEYos kThoos"
             >
               <svg
-                height="300"
                 version="1.1"
                 viewBox="0 0 400.117 546.252"
-                width=""
+                width="300"
               >
                 <g
                   id="Dog"
@@ -1297,16 +1302,16 @@ Object {
                 </g>
               </svg>
               <div
-                class="sc-kstrdz dhnozI"
+                class="sc-fodVxV fhGaLn"
               >
                 <h3
-                  class="sc-hBEYos ka-dgrq"
+                  class="sc-fFubgz gxMaqo"
                 >
                    
                   WHERE YOUR PET BECOMES OUR BUDDY
                 </h3>
                 <h1
-                  class="sc-fodVxV fjMFAx"
+                  class="sc-bkzZxe kHxVrG"
                 >
                   PetBuddy
                 </h1>
@@ -1317,7 +1322,7 @@ Object {
                   We are PetBuddy and we specalise in looking after your pets, from walking your pooches, looking after your pet whilst you are away, to offering a specialist grooming service to your cats, our aim is to give you peace of mind that your pet is in great hands with us.
                 </p>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                   tabindex="0"
                   type="button"
                 >
@@ -1333,13 +1338,12 @@ Object {
               </div>
             </div>
             <div
-              class="sc-bqyKva dkBLRu"
+              class="sc-hBEYos jLzNaC"
             >
               <svg
-                height="300"
                 version="1.1"
                 viewBox="0 0 400.117 546.252"
-                width=""
+                width="300"
               >
                 <g
                   id="Dog"
@@ -1475,16 +1479,16 @@ Object {
                 </g>
               </svg>
               <div
-                class="sc-kstrdz dhnozI"
+                class="sc-fodVxV fhGaLn"
               >
                 <h3
-                  class="sc-hBEYos ka-dgrq"
+                  class="sc-fFubgz gxMaqo"
                 >
                    
                   Your pet, our buddy
                 </h3>
                 <h1
-                  class="sc-fodVxV fjMFAx"
+                  class="sc-bkzZxe kHxVrG"
                 >
                   Complete Pet Services
                 </h1>
@@ -1500,39 +1504,39 @@ Object {
               </div>
               <img
                 alt="cat"
-                class="sc-fFubgz VAvEn"
+                class="sc-idOhPF dUPAjq"
                 src="Boss.jpg"
               />
             </div>
             <h2
-              style="text-align: center; font-size: 28px;"
+              style="text-align: center; font-size: 28px; max-width: 1280px;"
             >
               Our Services
             </h2>
             <div
-              class="sc-dmlrTW lhAlkI"
+              class="sc-fKFyDc fedawu"
             >
               <div
-                class="sc-iBPRYJ jnacfu"
+                class="sc-pFZIQ bSsYSM"
               >
                 <img
                   alt="Service image"
-                  class="sc-fubCfw QXVZd"
+                  class="sc-jrAGrp bteZJe"
                   src="CatServices.jpg"
                 />
                 <h3
-                  class="sc-pFZIQ"
+                  class="sc-kEjbxe"
                 >
                    
                   Cat Services
                 </h3>
                 <p
-                  class="sc-jrAGrp UxbBo"
+                  class="sc-iqHYGH ksUUiG"
                 >
                   We offer a cat sitting and fully qualified grooming service, let us have your cat looking and feeling amazing.
                 </p>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                   tabindex="0"
                   type="button"
                 >
@@ -1547,26 +1551,26 @@ Object {
                 </button>
               </div>
               <div
-                class="sc-iBPRYJ jnacfu"
+                class="sc-pFZIQ bSsYSM"
               >
                 <img
                   alt="Service image"
-                  class="sc-fubCfw QXVZd"
+                  class="sc-jrAGrp bteZJe"
                   src="DogServices.jpg"
                 />
                 <h3
-                  class="sc-pFZIQ"
+                  class="sc-kEjbxe"
                 >
                    
                   Dog Services
                 </h3>
                 <p
-                  class="sc-jrAGrp UxbBo"
+                  class="sc-iqHYGH ksUUiG"
                 >
                   Trust us with dog walking, sitting, behaviour and communication. Your pooch is guaranteed to be in safe hands with us.
                 </p>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                   tabindex="0"
                   type="button"
                 >
@@ -1581,26 +1585,26 @@ Object {
                 </button>
               </div>
               <div
-                class="sc-iBPRYJ jnacfu"
+                class="sc-pFZIQ bSsYSM"
               >
                 <img
                   alt="Service image"
-                  class="sc-fubCfw QXVZd"
+                  class="sc-jrAGrp bteZJe"
                   src="PetServices.jpg"
                 />
                 <h3
-                  class="sc-pFZIQ"
+                  class="sc-kEjbxe"
                 >
                    
                   Small Pet Services
                 </h3>
                 <p
-                  class="sc-jrAGrp UxbBo"
+                  class="sc-iqHYGH ksUUiG"
                 >
                   PetBuddy will care for your pet, however small. Birds, fish, ferrets, whatever your pet is, you can count on us.
                 </p>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-gKsewC iAiqQo"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-fubCfw kyvMUJ"
                   tabindex="0"
                   type="button"
                 >
@@ -1616,14 +1620,14 @@ Object {
               </div>
             </div>
             <div
-              class="sc-dmlrTW lhAlkI"
+              class="sc-fKFyDc fedawu"
             >
               <div
-                class="sc-kEjbxe gIcwcU review-container"
+                class="sc-crrsfI haiVCs review-container"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root sc-crrsfI uhWfK"
+                  class="MuiSvgIcon-root sc-bqyKva cBGoCX"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -1632,26 +1636,26 @@ Object {
                   />
                 </svg>
                 <div
-                  class="sc-iqHYGH dHIrVn"
+                  class="sc-dQppl dhFVuw"
                 >
                   <p
-                    class="sc-dQppl giaaCA"
+                    class="sc-kstrdz jLBsGZ"
                   >
                     “PetBuddy are always available, even at short notice and Christmas. They take really great care of Lulu, giving lots of love and attention. Really pleased to have PetBuddy around”
                   </p>
                   <p
-                    class="sc-dQppl giaaCA"
+                    class="sc-kstrdz jLBsGZ"
                   >
                     - Maila, London
                   </p>
                 </div>
               </div>
               <div
-                class="sc-kEjbxe gIcwcU review-container"
+                class="sc-crrsfI haiVCs review-container"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root sc-crrsfI uhWfK"
+                  class="MuiSvgIcon-root sc-bqyKva cBGoCX"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -1660,26 +1664,26 @@ Object {
                   />
                 </svg>
                 <div
-                  class="sc-iqHYGH dHIrVn"
+                  class="sc-dQppl dhFVuw"
                 >
                   <p
-                    class="sc-dQppl giaaCA"
+                    class="sc-kstrdz jLBsGZ"
                   >
                     “We always return from holiday to find Boss as happy as when we look after him ourselves, PetBuddy only have the best sitters and we trust them 100%”
                   </p>
                   <p
-                    class="sc-dQppl giaaCA"
+                    class="sc-kstrdz jLBsGZ"
                   >
                     - Margarita, London
                   </p>
                 </div>
               </div>
               <div
-                class="sc-kEjbxe gIcwcU review-container"
+                class="sc-crrsfI haiVCs review-container"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root sc-crrsfI uhWfK"
+                  class="MuiSvgIcon-root sc-bqyKva cBGoCX"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -1688,15 +1692,15 @@ Object {
                   />
                 </svg>
                 <div
-                  class="sc-iqHYGH dHIrVn"
+                  class="sc-dQppl dhFVuw"
                 >
                   <p
-                    class="sc-dQppl giaaCA"
+                    class="sc-kstrdz jLBsGZ"
                   >
                     “George loves his walks with PetBuddy, they really treat him like he is their own, he comes back happy and having had the best playtime”
                   </p>
                   <p
-                    class="sc-dQppl giaaCA"
+                    class="sc-kstrdz jLBsGZ"
                   >
                     - Annabelle, Nottingham
                   </p>
@@ -1704,14 +1708,14 @@ Object {
               </div>
             </div>
             <div
-              class="sc-bkzZxe dKzyaY"
+              class="sc-dIUggk hVZwpL"
             >
               <div
-                class="sc-idOhPF kfnbIs"
+                class="sc-hHftDr imrbpW"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-envelope fa-w-16 fa-3x sc-dIUggk gYXUHX"
+                  class="svg-inline--fa fa-envelope fa-w-16 fa-3x sc-dmlrTW jJLKmY"
                   data-icon="envelope"
                   data-prefix="fas"
                   focusable="false"
@@ -1729,11 +1733,11 @@ Object {
                 </p>
               </div>
               <div
-                class="sc-idOhPF kfnbIs"
+                class="sc-hHftDr imrbpW"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-phone-alt fa-w-16 fa-3x sc-dIUggk gYXUHX"
+                  class="svg-inline--fa fa-phone-alt fa-w-16 fa-3x sc-dmlrTW jJLKmY"
                   data-icon="phone-alt"
                   data-prefix="fas"
                   focusable="false"
@@ -1751,11 +1755,11 @@ Object {
                 </p>
               </div>
               <div
-                class="sc-idOhPF kfnbIs"
+                class="sc-hHftDr imrbpW"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-instagram fa-w-14 fa-3x sc-dIUggk gYXUHX"
+                  class="svg-inline--fa fa-instagram fa-w-14 fa-3x sc-dmlrTW jJLKmY"
                   data-icon="instagram"
                   data-prefix="fab"
                   focusable="false"
@@ -1773,11 +1777,11 @@ Object {
                 </p>
               </div>
               <div
-                class="sc-idOhPF kfnbIs"
+                class="sc-hHftDr imrbpW"
               >
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-facebook fa-w-16 fa-3x sc-dIUggk gYXUHX"
+                  class="svg-inline--fa fa-facebook fa-w-16 fa-3x sc-dmlrTW jJLKmY"
                   data-icon="facebook"
                   data-prefix="fab"
                   focusable="false"
@@ -1795,14 +1799,14 @@ Object {
                 </p>
               </div>
             </div>
+            <footer
+              class="sc-kfzAmx eAVsUr"
+            >
+              Designed & managed by Pet Buddy@2020
+            </footer>
           </div>
         </div>
       </div>
-      <footer
-        class="sc-hHftDr fzfbuO"
-      >
-        Designed & managed by Pet Buddy@2020
-      </footer>
     </div>
   </div>,
   "debug": [Function],
