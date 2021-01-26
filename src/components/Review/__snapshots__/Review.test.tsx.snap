@@ -6,43 +6,11 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ bDmmXL review-container"
+        class="sc-bdfBwQ dgtmWP review-container"
       >
-        <div>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root sc-dlfnbm fnQiNF"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
-            />
-          </svg>
-        </div>
-        <div>
-          <div
-            class="sc-gsTCUz bxoXwu"
-          >
-            <p
-              class="sc-hKgILt fCvRdt"
-            />
-            <p
-              class="sc-hKgILt fCvRdt"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bdfBwQ bDmmXL review-container"
-    >
-      <div>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root sc-dlfnbm fnQiNF"
+          class="MuiSvgIcon-root sc-dlfnbm edgDTe"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -50,18 +18,42 @@ Object {
             d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
           />
         </svg>
-      </div>
-      <div>
         <div
-          class="sc-gsTCUz bxoXwu"
+          class="sc-gsTCUz hoQEOd"
         >
           <p
-            class="sc-hKgILt fCvRdt"
+            class="sc-hKgILt ecAgoU"
           />
           <p
-            class="sc-hKgILt fCvRdt"
+            class="sc-hKgILt ecAgoU"
           />
         </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-bdfBwQ dgtmWP review-container"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root sc-dlfnbm edgDTe"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"
+        />
+      </svg>
+      <div
+        class="sc-gsTCUz hoQEOd"
+      >
+        <p
+          class="sc-hKgILt ecAgoU"
+        />
+        <p
+          class="sc-hKgILt ecAgoU"
+        />
       </div>
     </div>
   </div>,
