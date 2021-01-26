@@ -9,8 +9,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import { mediaQueries } from '../../mediaqueries'
 import { PetBuddyLogo } from "../Logo";
-
-const linksArray: Array<string> = ['Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
+import { Link } from 'react-router-dom';
 
 const StyledAppBar = styled(AppBar)`
 display:flex;
@@ -22,8 +21,8 @@ flex-direction: row;
 justify-content: space-between
 `
 const LogoStyle = styled.div`
-padding:.3rem 0
-margin-right: 0
+padding:.3rem 0;
+margin-right: 0;
 `
 const StyledTypography = styled(Typography)`
 color:red;
@@ -37,8 +36,10 @@ ${mediaQueries('tablet')`
   color:purple;
   `}
 `
-const StyledIconButton = styled(IconButton)``
-
+const StyledIconButton = styled(IconButton)`
+${mediaQueries('laptop')`
+display:none`}
+`
 const StyledMenuIcon = styled(MenuIcon)`
 font-size: 3rem;
 font-weight: 700;
@@ -51,16 +52,44 @@ display:none;
 const StyledMenu = styled(Menu)`
 margin-left: 3.5 %;
 `
+const StyledMenuItem = styled(MenuItem)`
+display:flex;
+flex-direction:column;
+margin:0;
+padding:0 2rem;
+align-items:baseline;
+`
 const NavBarItems = styled.div`
 display: none;
 ${mediaQueries("medium")`
-  position:absolute;
-  right:2rem;
   display:flex;
   flex-direction:row;
+  justify-content:space-around;
+  width: 60%;
+  margin-left: 20rem;
   color:#f48fb1;
-  font-weight: 900;
+  font-weight: 700;
   `}
+`
+const NavBarLink = styled(Link)`
+text-decoration:none;
+height:2rem;
+opacity: 0.6;
+transition: 0.3s;
+&:hover {
+  margin:0;
+  opacity:1;
+  width:100%;
+  font-weight:700;
+}
+${mediaQueries('laptop')`
+height:auto;
+&:hover {
+  width:auto;
+  background:none;
+  transition: 0.5s;
+  opacity:1;
+}`}
 `
 
 export default function MenuAppBar() {
@@ -75,10 +104,6 @@ export default function MenuAppBar() {
     setAnchorEl(null);
   };
 
-  const ourServices = linksArray.map(service => {
-    return <MenuItem onClick={handleClose}>{service}</MenuItem>
-  })
-
   return (
     <StyledAppBar>
       <StyledToolbar>
@@ -88,7 +113,13 @@ export default function MenuAppBar() {
         <StyledTypography >
           PetBuddy
           </StyledTypography>
-        <NavBarItems>{ourServices}</NavBarItems>
+        <NavBarItems>
+          <NavBarLink to={'/cat-service'}>Cat Services</NavBarLink>
+          <NavBarLink to={'/dog-service'}>Dog Services</NavBarLink>
+          <NavBarLink to={'/pet-service'}>Small Pet Services</NavBarLink>
+          <NavBarLink to={'/contact'}>Contact Us</NavBarLink>
+          <NavBarLink to={'/join'}>Join Us</NavBarLink>
+        </NavBarItems>
         <StyledIconButton
           onClick={handleMenu}>
           <StyledMenuIcon />
@@ -101,7 +132,13 @@ export default function MenuAppBar() {
           open={open}
           onClose={handleClose}
         >
-          {ourServices}
+          <StyledMenuItem className="menu-burguer">
+            <NavBarLink to={'/cat-service'}>Cat Services</NavBarLink>
+            <NavBarLink to={'/dog-service'}>Dog Services</NavBarLink>
+            <NavBarLink to={'/pet-service'}>Small Pet Services</NavBarLink>
+            <NavBarLink to={'/contact'}>Contact Us</NavBarLink>
+            <NavBarLink to={'/join'}>Join Us</NavBarLink>
+          </StyledMenuItem>
         </StyledMenu>
       </StyledToolbar>
     </StyledAppBar>
