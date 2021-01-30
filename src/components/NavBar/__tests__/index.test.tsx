@@ -1,13 +1,11 @@
 import React from 'react'
 import NavBar from '../index'
-import { render } from '@testing-library/react'
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
 describe('NavBar component', () => {
   it('should render', () => {
-    const wrapper = render(<NavBar />)
-  })
-  it('should display text', () => {
-    const wrapper = 'Cat Services';
-    expect(wrapper).toEqual('Cat Services')
+    const wrapper = shallow(<NavBar />)
+    expect(toJson(wrapper)).toMatchSnapshot();
   })
 })
