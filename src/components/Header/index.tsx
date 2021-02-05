@@ -5,12 +5,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
+import NavBar from '../NavBar'
 import { mediaQueries } from '../../mediaqueries'
 import { PetBuddyLogo } from "../Logo";
-
-const linksArray: Array<string> = ['Cat Services', 'Dog Services', 'Small Pet Services', 'Become a PBuddy', 'Contact Us']
 
 const StyledAppBar = styled(AppBar)`
 display:flex;
@@ -22,8 +20,8 @@ flex-direction: row;
 justify-content: space-between
 `
 const LogoStyle = styled.div`
-padding:.3rem 0
-margin-right: 0
+padding:.3rem 0;
+margin-right: 0;
 `
 const StyledTypography = styled(Typography)`
 color:red;
@@ -37,8 +35,10 @@ ${mediaQueries('tablet')`
   color:purple;
   `}
 `
-const StyledIconButton = styled(IconButton)``
-
+const StyledIconButton = styled(IconButton)`
+${mediaQueries('laptop')`
+display:none`}
+`
 const StyledMenuIcon = styled(MenuIcon)`
 font-size: 3rem;
 font-weight: 700;
@@ -48,20 +48,7 @@ ${mediaQueries("medium")`
 display:none;
 `}
 `
-const StyledMenu = styled(Menu)`
-margin-left: 3.5 %;
-`
-const NavBarItems = styled.div`
-display: none;
-${mediaQueries("medium")`
-  position:absolute;
-  right:2rem;
-  display:flex;
-  flex-direction:row;
-  color:#f48fb1;
-  font-weight: 900;
-  `}
-`
+const StyledMenu = styled(Menu)``
 
 export default function MenuAppBar() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -75,10 +62,6 @@ export default function MenuAppBar() {
     setAnchorEl(null);
   };
 
-  const ourServices = linksArray.map(service => {
-    return <MenuItem onClick={handleClose}>{service}</MenuItem>
-  })
-
   return (
     <StyledAppBar>
       <StyledToolbar>
@@ -88,12 +71,18 @@ export default function MenuAppBar() {
         <StyledTypography >
           PetBuddy
           </StyledTypography>
-        <NavBarItems>{ourServices}</NavBarItems>
+        <NavBar />
         <StyledIconButton
           onClick={handleMenu}>
           <StyledMenuIcon />
         </StyledIconButton>
         <StyledMenu
+          PaperProps={{
+            style: {
+              width: '100vw',
+              textAlign: 'center'
+            },
+          }}
           anchorEl={anchorEl}
           getContentAnchorEl={null}
           anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
@@ -101,7 +90,7 @@ export default function MenuAppBar() {
           open={open}
           onClose={handleClose}
         >
-          {ourServices}
+          <NavBar primary />
         </StyledMenu>
       </StyledToolbar>
     </StyledAppBar>

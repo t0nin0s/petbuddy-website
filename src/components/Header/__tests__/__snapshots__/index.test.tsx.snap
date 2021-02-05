@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render 1`] = `
+<Styled(WithStyles(ForwardRef(AppBar)))>
+  <Styled(WithStyles(ForwardRef(Toolbar)))>
+    <styled.div>
+      <PetBuddyLogo
+        size="small"
+      />
+    </styled.div>
+    <Styled(WithStyles(ForwardRef(Typography)))>
+      PetBuddy
+    </Styled(WithStyles(ForwardRef(Typography)))>
+    <_default />
+    <Styled(WithStyles(ForwardRef(IconButton)))
+      onClick={[Function]}
+    >
+      <Styled(Component) />
+    </Styled(WithStyles(ForwardRef(IconButton)))>
+    <Styled(WithStyles(ForwardRef(Menu)))
+      PaperProps={
+        Object {
+          "style": Object {
+            "textAlign": "center",
+            "width": "100vw",
+          },
+        }
+      }
+      anchorEl={null}
+      anchorOrigin={
+        Object {
+          "horizontal": "center",
+          "vertical": "bottom",
+        }
+      }
+      getContentAnchorEl={null}
+      onClose={[Function]}
+      open={false}
+      transformOrigin={
+        Object {
+          "horizontal": "center",
+          "vertical": "top",
+        }
+      }
+    >
+      <_default
+        primary={true}
+      />
+    </Styled(WithStyles(ForwardRef(Menu)))>
+  </Styled(WithStyles(ForwardRef(Toolbar)))>
+</Styled(WithStyles(ForwardRef(AppBar)))>
+`;

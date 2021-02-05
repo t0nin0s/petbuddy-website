@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar component should render 1`] = `
+<styled.div>
+  <Styled(Link)
+    to="/cat-service"
+  >
+    Cat Services
+  </Styled(Link)>
+  <Styled(Link)
+    to="/dog-service"
+  >
+    Dog Services
+  </Styled(Link)>
+  <Styled(Link)
+    to="/pet-service"
+  >
+    Small Pet Services
+  </Styled(Link)>
+  <Styled(Link)
+    to="/contact"
+  >
+    Contact Us
+  </Styled(Link)>
+  <Styled(Link)
+    to="/join"
+  >
+    Join Us
+  </Styled(Link)>
+</styled.div>
+`;

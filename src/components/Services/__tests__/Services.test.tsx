@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Services from './index'
+import Services from '../index'
 
 describe('Services component', () => {
   it('should render', () => {

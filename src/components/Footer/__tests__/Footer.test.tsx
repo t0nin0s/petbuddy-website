@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './index'
+import Footer from '../index'
 import { StyledFooter } from 'styled-components'
 import { render } from '@testing-library/react'
 

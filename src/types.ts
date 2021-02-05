@@ -29,3 +29,7 @@ export interface Services {
   image: any;
 }
 
+export interface NavBarProps {
+  primary?: boolean
+}
+
